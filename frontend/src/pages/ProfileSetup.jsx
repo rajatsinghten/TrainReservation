@@ -9,12 +9,6 @@ const ProfileSetup = () => {
     age: '',
     profession: '',
     bio: '',
-    travelStatus: {
-      boardingStation: '',
-      destinationStation: '',
-      travelDate: null,
-      isActive: false
-    }
   })
   const [error, setError] = useState('')
   const [loading, setLoading] = useState(false)
@@ -27,13 +21,9 @@ const ProfileSetup = () => {
   }, [navigate])
 
   const handleChange = (e) => {
-    const value = e.target.type === 'checkbox' 
-      ? e.target.checked 
-      : e.target.value
-    
     setFormData({
       ...formData,
-      [e.target.id]: value
+      [e.target.id]: e.target.value
     })
   }
 
@@ -48,21 +38,21 @@ const ProfileSetup = () => {
         if (!formData[field]) {
           setError(`${field.charAt(0).toUpperCase() + field.slice(1)} is required`)
           setLoading(false)
-          return
+          return;
         }
       }
       
       if (formData.bio.length > 200) {
         setError('Bio must be 200 characters or less')
         setLoading(false)
-        return
+        return;
       }
       
       const ageNumber = Number(formData.age)
       if (isNaN(ageNumber) || ageNumber <= 0) {
         setError('Please enter a valid age')
         setLoading(false)
-        return
+        return;
       }
 
       const profileData = {
@@ -86,7 +76,7 @@ const ProfileSetup = () => {
     }
   }
 
-  const inputClass = "w-full px-4 py-2.5 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/30 focus:outline-none focus:border-primary-400 focus:ring-2 focus:ring-primary-400/20 transition-all"
+  const inputClass = "w-full px-4 py-2.5 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/30 focus:outline-none focus:border-primary-400 focus:ring-2 focus:ring-primary-400/20 transition-all font-display"
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-surface-900 via-surface-800 to-surface-900 flex items-center justify-center p-4 relative overflow-hidden">
@@ -99,20 +89,20 @@ const ProfileSetup = () => {
         <Link to="/" className="flex items-center justify-center gap-2 mb-8">
           <div className="w-9 h-9 bg-gradient-to-br from-primary-500 to-primary-700 rounded-xl flex items-center justify-center">
             <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
             </svg>
           </div>
-          <span className="text-xl font-bold text-white">
+          <span className="text-xl font-bold text-white font-display">
             Train<span className="text-primary-400">Buddy</span>
           </span>
         </Link>
 
         <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-7 shadow-2xl">
-          <h2 className="text-white text-xl font-bold mb-1 text-center">
+          <h2 className="text-white text-xl font-bold mb-1 text-center font-display">
             Complete Your Profile
           </h2>
           <p className="text-white/40 text-sm text-center mb-6">
-            Tell us more about yourself to find travel buddies
+            Fill in your details to start booking tickets
           </p>
 
           {error && (
@@ -186,10 +176,6 @@ const ProfileSetup = () => {
                 {formData.bio.length}/200
               </p>
             </div>
-
-            <p className="text-xs text-white/30">
-              You can set your travel status after completing your profile.
-            </p>
 
             <button
               type="submit"
