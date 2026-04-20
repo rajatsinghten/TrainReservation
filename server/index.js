@@ -1,6 +1,6 @@
 const dotenv = require('dotenv')
 const path = require('path');
-dotenv.config({ path: path.join(__dirname, '..', '.env') })
+dotenv.config()
 
 const express = require('express')
 const cors = require('cors');
@@ -22,7 +22,7 @@ try {
 const PORT = process.env.PORT || 4000;
 const isProduction = process.env.NODE_ENV === 'production';
 const projectRoot = path.resolve(__dirname, '..');
-const frontendDistPath = path.join(projectRoot, 'frontend', 'dist');
+const frontendDistPath = path.join(projectRoot, 'client', 'dist');
 
 const app = express()
 

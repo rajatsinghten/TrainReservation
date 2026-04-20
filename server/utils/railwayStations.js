@@ -9,7 +9,7 @@ const loadRailwayStations = () => {
     try {
       // Use an absolute path for production environments
       const filePath = process.env.NODE_ENV === 'production'
-        ? path.join(process.cwd(), "backend/assets/railway_stations.json")
+        ? path.join(process.cwd(), "assets/railway_stations.json")
         : path.join(__dirname, "../assets/railway_stations.json");
       
       // Check if file exists
@@ -18,7 +18,7 @@ const loadRailwayStations = () => {
         const alternativePaths = [
           path.join(process.cwd(), "assets/railway_stations.json"),
           path.join(__dirname, "../assets/railway_stations.json"),
-          path.join(process.cwd(), "backend/assets/railway_stations.json")
+          path.join(process.cwd(), "server/assets/railway_stations.json")
         ];
         
         let foundPath = null;

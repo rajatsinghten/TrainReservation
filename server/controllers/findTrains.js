@@ -12,8 +12,9 @@ const findTrains = async (req, res) => {
   }
 
   try {
-    // Make API call to the train search endpoint
-    const apiUrl = `https://cttrainsapi.confirmtkt.com/api/v1/trains/search?sourceStationCode=${from}&destinationStationCode=${to}&dateOfJourney=${train_date}`;
+    // Use the train search API strictly from the environment
+    const apiBaseUrl = process.env.TRAIN_SEARCH_API_URL;
+    const apiUrl = `${apiBaseUrl}?sourceStationCode=${from}&destinationStationCode=${to}&dateOfJourney=${train_date}`;
     
     const response = await axios.get(apiUrl);
       // Extract useful train data from the API response

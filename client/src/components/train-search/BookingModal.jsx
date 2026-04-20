@@ -9,7 +9,8 @@ const BookingModal = ({ isOpen, onClose, booking }) => {
     if (!isOpen || !booking) return;
 
     // Connect to socket to listen for payment confirmation
-    const socket = io(window.location.origin.replace("5173", "4000"));
+    // Connect to socket - Use environment variable or default to current origin
+    const socket = io(import.meta.env.VITE_SOCKET_URL || window.location.origin);
 
     socket.emit("join", booking.userId);
 
@@ -30,7 +31,8 @@ const BookingModal = ({ isOpen, onClose, booking }) => {
 
   if (!isOpen) return null;
 
-  const baseUrl = window.location.origin.replace("5173", "4000");
+  // QR code requires an absolute URL. Use env var or default to current origin.
+  const baseUrl = import.meta.env.VITE_API_BASE_URL || window.location.origin;
   const paymentUrl = `${baseUrl}/api/bookings/pay/${booking.qrToken}`;
   const qrCodeUrl = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(paymentUrl)}`;
 

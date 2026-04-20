@@ -1,16 +1,6 @@
 import axios from 'axios';
 
-const defaultApiBaseURL = import.meta.env.MODE === 'development'
-  ? 'http://localhost:4000'
-  : 'https://train-reservation.onrender.com';
-
-const defaultSocketURL = import.meta.env.MODE === 'development'
-  ? 'http://localhost:4000'
-  : 'https://train-reservation.onrender.com';
-
-export const getApiBaseURL = () => import.meta.env.VITE_API_BASE_URL || defaultApiBaseURL;
-
-export const getSocketURL = () => import.meta.env.VITE_SOCKET_URL || defaultSocketURL;
+const getApiBaseURL = () => import.meta.env.VITE_API_BASE_URL || '';
 
 const axiosInstance = axios.create({
   baseURL: getApiBaseURL(),
