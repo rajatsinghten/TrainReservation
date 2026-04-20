@@ -37,8 +37,8 @@ const BookingModal = ({ isOpen, onClose, booking }) => {
   const qrCodeUrl = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(paymentUrl)}`;
 
   return (
-    <div className="fixed inset-0 z-[1000] flex items-center justify-center p-6 bg-black/80 animate-minimal-in">
-      <div className="bg-white border-4 border-black max-w-sm w-full p-8 space-y-8">
+    <div className="fixed inset-0 z-[1000] flex items-center justify-center overflow-y-auto p-6 pt-24 bg-black/80 animate-minimal-in">
+      <div className="bg-white border-4 border-black max-w-sm w-full p-8 space-y-8 my-auto">
         <div className="text-center space-y-2">
           <h2 className="text-2xl font-black uppercase tracking-tighter">Secure Payment</h2>
           <p className="text-[10px] font-black uppercase tracking-widest opacity-30">Scan to finalize reservation</p>
