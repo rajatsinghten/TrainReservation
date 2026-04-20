@@ -27,12 +27,24 @@ const createBooking = async (req, res) => {
     // Generate a special number for QR payment
     const qrToken = crypto.randomBytes(16).toString("hex");
 
+    const parseDate = (dateStr) => {
+      if (!dateStr) return new Date();
+      // If already ISO format YYYY-MM-DD
+      if (/^\d{4}-\d{2}-\d{2}/.test(dateStr)) return new Date(dateStr);
+      // Handle DD-MM-YYYY
+      const parts = dateStr.split("-");
+      if (parts.length === 3 && parts[0].length === 2 && parts[2].length === 4) {
+        return new Date(`${parts[2]}-${parts[1]}-${parts[0]}`);
+      }
+      return new Date(dateStr);
+    };
+
     const booking = await prisma.reservation.create({
       data: {
         pnr,
         trainNumber,
         trainName: trainName || "Unknown Train",
-        travelDate: new Date(travelDate),
+        travelDate: parseDate(travelDate),
         boardingStation,
         destinationStation,
         class: travelClass,

@@ -1,6 +1,8 @@
-const express = require('express')
 const dotenv = require('dotenv')
 const path = require('path');
+dotenv.config({ path: path.join(__dirname, '..', '.env') })
+
+const express = require('express')
 const cors = require('cors');
 const http = require('http');
 const { Server } = require('socket.io');
@@ -8,8 +10,6 @@ const trainRoute = require('./routes/findTrainRoute');
 const stationRoute = require('./routes/stationRoute');
 const userRoute = require('./routes/userRoute');
 const bookingRoute = require('./routes/bookingRoute');
-
-dotenv.config({ path: path.join(__dirname, '..', '.env') })
 
 // Initialize railway stations data at startup
 try {

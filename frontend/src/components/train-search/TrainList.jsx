@@ -13,7 +13,7 @@ const TrainList = () => {
       <div className="max-h-[500px] overflow-y-auto space-y-3 pr-1 pb-6 scrollbar-thin">
         {trains.length > 0 ? (
           trains.map((train) => (
-            <TrainCard key={train.train_number} train={train} />
+            <TrainCard key={train.trainNumber} train={train} />
           ))
         ) : (
           <div className="flex flex-col items-center justify-center py-12 gap-3">
