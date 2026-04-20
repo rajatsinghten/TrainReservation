@@ -2,14 +2,7 @@ const express = require("express");
 const router = express.Router();
 const { findTrains } = require("../controllers/findTrains");
 
+// GET /api/trains/trains -> should probably just be /
+router.get('/', findTrains);
 
-const app = express();
-
-// Middleware to parse JSON
-app.use(express.json());
-
-
-
-router.get('/trains', findTrains)
-
-module.exports = router
+module.exports = router;

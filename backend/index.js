@@ -7,18 +7,14 @@ const { Server } = require('socket.io');
 const trainRoute = require('./routes/findTrainRoute');
 const stationRoute = require('./routes/stationRoute');
 const userRoute = require('./routes/userRoute');
-const friendRoute = require('./routes/friendRoute');
-const messageRoute = require('./routes/messageRoute');
-const connectToDB = require('./config/db')
-const Message = require('./models/Message');
+const bookingRoute = require('./routes/bookingRoute');
 
 dotenv.config({ path: path.join(__dirname, '..', '.env') })
-connectToDB()
 
 // Initialize railway stations data at startup
 try {
   const { loadRailwayStations } = require('./utils/railwayStations');
-  const stationData = loadRailwayStations();
+  loadRailwayStations();
 } catch (error) {
   console.error('Failed to load railway stations data at startup:', error);
 }
@@ -38,15 +34,11 @@ app.use(cors({
 }))
 
 app.use(express.json())
-app.use(express.static(path.join(__dirname, 'public')));
 
-app.set('view engine', 'ejs')
-
-app.use('/api', trainRoute)
+app.use('/api/trains', trainRoute)
 app.use('/api/stations', stationRoute)
 app.use('/api/users', userRoute)
-app.use('/api/friends', friendRoute)
-app.use('/api/messages', messageRoute)
+app.use('/api/bookings', bookingRoute)
 
 if (isProduction) {
   app.use(express.static(frontendDistPath));
@@ -55,7 +47,7 @@ if (isProduction) {
   });
 } else {
   app.get('/', (req, res) => {
-    res.send('BuddyOnTrain API is running in development mode');
+    res.send('Train Reservation System API is running');
   });
 }
 
@@ -68,48 +60,23 @@ const io = new Server(server, {
   }
 });
 
-const onlineUsers = new Map();
+// Set global io object for access in controllers (like payment notifications)
+global.io = io;
 
 io.on('connection', (socket) => {
-  // Handle user joining
-  socket.on('joinChat', (userId) => {
-    onlineUsers.set(userId, socket.id);
-    socket.broadcast.emit('userOnline', userId);
+  console.log('Client connected:', socket.id);
+
+  socket.on('join', (userId) => {
+    // Join a personal room for targeted notifications (like payment confirmation)
+    socket.join(`user_${userId}`);
+    console.log(`User ${userId} joined their room`);
   });
-  
-  // Handle sending messages
-  socket.on('sendMessage', async (message) => {
-    try {
-      const newMessage = new Message({
-        sender: message.sender,
-        receiver: message.receiver,
-        content: message.content,
-        timestamp: new Date()
-      });
-      await newMessage.save();
-      const receiverSocketId = onlineUsers.get(message.receiver);
-      if (receiverSocketId) {
-        io.to(receiverSocketId).emit('receiveMessage', newMessage);
-      }
-      socket.emit('messageSent', newMessage);
-    } catch (error) {
-      socket.emit('messageError', { error: 'Failed to send message' });
-    }
-  });
-  
-  // Handle user disconnection
+
   socket.on('disconnect', () => {
-    for (const [userId, socketId] of onlineUsers.entries()) {
-      if (socketId === socket.id) {
-        onlineUsers.delete(userId);
-        socket.broadcast.emit('userOffline', userId);
-        break;
-      }
-    }
+    console.log('Client disconnected:', socket.id);
   });
 });
 
 server.listen(PORT, '0.0.0.0', () => {
   console.log(`Server running on port ${PORT} in ${isProduction ? 'production' : 'development'} mode`);
 });
-

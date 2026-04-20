@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const User = require('../models/User');
+const prisma = require('../config/prisma');
 
 const protect = async (req, res, next) => {
   let token;
@@ -14,10 +14,12 @@ const protect = async (req, res, next) => {
       token = req.headers.authorization.split(' ')[1];
 
       // Verify token
-      const decoded = jwt.verify(token, process.env.JWT_SECRET || 'buddyontrain-secret');
+      const decoded = jwt.verify(token, process.env.JWT_SECRET || 'trainreservation-secret-key-123');
 
-      // Get user from the token (excluding password)
-      req.user = await User.findById(decoded.id).select('-password');
+      // Get user from the token
+      req.user = await prisma.user.findUnique({
+        where: { id: decoded.id },
+      });
 
       if (!req.user) {
         return res.status(401).json({ 
