@@ -10,6 +10,14 @@ const trainRoute = require('./routes/findTrainRoute');
 const stationRoute = require('./routes/stationRoute');
 const userRoute = require('./routes/userRoute');
 const bookingRoute = require('./routes/bookingRoute');
+const prisma = require('./config/prisma');
+
+// Verify database connection at startup
+prisma.$connect()
+  .then(() => console.log('Database connected successfully'))
+  .catch((err) => {
+    console.error('DATABASE CONNECTION ERROR:', err.message);
+  });
 
 // Initialize railway stations data at startup
 try {
