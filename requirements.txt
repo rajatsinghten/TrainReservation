@@ -1,0 +1,20 @@
+# Backend Dependencies
+express==4.18.2
+mongoose==7.0.3
+bcryptjs==2.4.3
+jsonwebtoken==9.0.0
+cors==2.8.5
+dotenv==16.0.3
+ejs==3.1.9
+express-async-handler==1.2.0
+nodemon==2.0.22
+path==0.12.7
+
+# Frontend Dependencies
+# These would typically be managed by package.json in a React project
+# Listed here for reference
+react==18.2.0
+react-dom==18.2.0
+react-router-dom==6.10.0
+axios==1.3.5
+tailwindcss==3.3.1 
