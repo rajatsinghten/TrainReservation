@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Base Layer ───────────────────────────────────── */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply font-sans text-black bg-white;
+    line-height: 1.7;
+  }
+
+  ::selection {
+    @apply bg-black text-white;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply tracking-tight font-black uppercase;
+  }
+}
+
+/* ─── Component Layer ──────────────────────────────── */
+@layer components {
+  /* Buttons */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 font-black uppercase
+           transition-all duration-150 border-2 border-black
+           disabled:opacity-20 disabled:pointer-events-none
+           text-xs tracking-widest cursor-pointer select-none;
+    padding: 0.75rem 1.5rem;
+  }
+
+  .btn-sm {
+    @apply px-4 py-2 text-[10px];
+  }
+
+  .btn-primary {
+    @apply bg-black text-white hover:bg-white hover:text-black;
+  }
+
+  .btn-secondary {
+    @apply bg-white text-black hover:bg-black hover:text-white;
+  }
+
+  .btn-outline {
+    @apply border-2 border-black bg-white text-black hover:bg-black hover:text-white;
+  }
+
+  .btn-ghost {
+    @apply border-transparent bg-transparent text-black hover:bg-surface-100;
+  }
+
+  /* Inputs */
+  .input {
+    @apply w-full px-4 py-3 bg-white border-2 border-black rounded-none
+           text-black placeholder-surface-400 text-sm
+           focus:outline-none focus:ring-4 focus:ring-black/5
+           disabled:bg-surface-100 disabled:opacity-50;
+  }
+
+  /* Cards */
+  .card {
+    @apply bg-white border-2 border-black rounded-none p-6;
+  }
+
+  .card-flat {
+    @apply card border-[1px] border-black/10;
+  }
+
+  /* Badges */
+  .badge {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 border border-black text-[10px] font-bold uppercase;
+  }
+
+  /* Layout */
+  .page-container {
+    @apply min-h-screen bg-white;
+  }
+
+  .page-content {
+    @apply max-w-4xl mx-auto px-6 pt-32 pb-24;
+  }
+}
+
+/* ─── Custom Animations (Minimal) ────────────────── */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-minimal-in {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* ─── Utilities ────────────────────────────────────── */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

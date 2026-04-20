@@ -91,10 +91,30 @@ const handleQrPayment = async (req, res) => {
     }
 
     if (booking.status === "PAID") {
-      return res.status(200).json({
-        success: true,
-        message: "Payment already processed",
-      });
+      return res.send(`
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Already Paid</title>
+            <style>
+                body { margin: 0; padding: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; font-family: sans-serif; background: white; color: black;}
+                .card { border: 4px solid black; padding: 40px; max-width: 320px; width: 100%; text-align: center;}
+                h1 { font-size: 24px; font-weight: 900; text-transform: uppercase; margin: 0 0 10px; }
+                p { font-size: 10px; font-weight: 900; text-transform: uppercase; opacity: 0.3; margin: 0 0 24px; letter-spacing: 2px; }
+                .back { border: 2px solid black; padding: 12px; display: block; font-size: 10px; font-weight: 900; text-decoration: none; color: black; text-transform: uppercase; letter-spacing: 2px; }
+            </style>
+        </head>
+        <body>
+            <div class="card">
+                <h1>ALREADY PAID</h1>
+                <p>This reservation is confirmed.</p>
+                <a href="/" class="back">CLOSE</a>
+            </div>
+        </body>
+        </html>
+      `);
     }
 
     const updatedBooking = await prisma.reservation.update({
@@ -112,11 +132,44 @@ const handleQrPayment = async (req, res) => {
       });
     }
 
-    res.json({
-      success: true,
-      message: "Payment successful! Your ticket is confirmed.",
-      booking: updatedBooking,
-    });
+    res.send(`
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Payment Successful</title>
+          <style>
+              body { 
+                  margin: 0; padding: 20px; 
+                  display: flex; flex-direction: column; align-items: center; justify-content: center; 
+                  min-height: 100vh; font-family: sans-serif; background: white; color: black;
+              }
+              .card { 
+                  border: 4px solid black; padding: 40px; max-width: 320px; width: 100%; text-align: center;
+              }
+              .icon { 
+                  width: 48px; height: 48px; background: black; color: white; 
+                  display: flex; align-items: center; justify-content: center; 
+                  margin: 0 auto 24px; font-weight: bold; font-size: 24px;
+              }
+              h1 { font-size: 24px; font-weight: 900; text-transform: uppercase; margin: 0 0 10px; }
+              p { font-size: 10px; font-weight: 900; text-transform: uppercase; opacity: 0.3; margin: 0 0 24px; letter-spacing: 2px; }
+              .pnr { border: 2px solid black; padding: 12px; font-weight: 900; font-size: 14px; margin-bottom: 24px; }
+              .back { border: 2px solid black; padding: 12px; display: block; font-size: 10px; font-weight: 900; text-decoration: none; color: black; text-transform: uppercase; letter-spacing: 2px; }
+          </style>
+      </head>
+      <body>
+          <div class="card">
+              <div class="icon">✓</div>
+              <h1>PAID</h1>
+              <p>Reservation Confirmed</p>
+              <div class="pnr">PNR: ${updatedBooking.pnr}</div>
+              <a href="/" class="back">CLOSE</a>
+          </div>
+      </body>
+      </html>
+    `);
   } catch (error) {
     console.error("Error in handleQrPayment:", error);
     res.status(500).json({

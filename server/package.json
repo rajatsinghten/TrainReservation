@@ -4,10 +4,10 @@
   "description": "Professional Train Reservation System with real-time payment simulation",
   "main": "server.js",
   "scripts": {
-    "start": "node backend/index.js",
-    "dev": "nodemon backend/index.js",
+    "start": "node index.js",
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm install && npm install --prefix frontend --include=dev && npm run build --prefix frontend"
+    "build": "npm install"
   },
   "keywords": [
     "train",

@@ -1,0 +1,81 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+      },
+      colors: {
+        // Flat Monochrome Palette
+        primary: {
+          50:  '#ffffff',
+          100: '#f9f9f9',
+          200: '#f3f3f3',
+          300: '#e5e5e5',
+          400: '#cccccc',
+          500: '#999999',
+          600: '#666666',
+          700: '#333333',
+          800: '#1a1a1a',
+          900: '#000000',
+          950: '#000000',
+        },
+        accent: {
+          DEFAULT: '#000000',
+          50:  '#ffffff',
+          100: '#f9f9f9',
+          200: '#eeeeee',
+          300: '#dddddd',
+          400: '#999999',
+          500: '#666666',
+          600: '#444444',
+          700: '#222222',
+          800: '#111111',
+          900: '#000000',
+        },
+        surface: {
+          50:  '#ffffff',
+          100: '#fafafa',
+          200: '#f0f0f0',
+          300: '#e0e0e0',
+          400: '#cccccc',
+          500: '#999999',
+          600: '#666666',
+          700: '#333333',
+          800: '#1a1a1a',
+          900: '#000000',
+          950: '#000000',
+        },
+      },
+      borderRadius: {
+        'none': '0',
+        'sm':  '0',
+        'md':  '0',
+        'lg':  '0',
+        'xl':  '0',
+        '2xl': '0',
+        'full': '9999px',
+      },
+      boxShadow: {
+        'none': 'none',
+        'xs':   'none',
+        'sm':   'none',
+        'md':   'none',
+        'lg':   'none',
+        'xl':   'none',
+        '2xl':  'none',
+      },
+      borderWidth: {
+        DEFAULT: '1px',
+        0: '0',
+        2: '2px',
+        4: '4px',
+      },
+    },
+  },
+  plugins: [],
+}
