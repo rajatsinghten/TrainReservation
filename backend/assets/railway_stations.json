@@ -1,0 +1,2690 @@
+{
+  "railway_stations_by_city": {
+    "ABU_ROAD": [
+      {
+        "station_name": "ABU ROAD",
+        "station_code": "ABR"
+      }
+    ],
+    "ADILABAD": [
+      {
+        "station_name": "ADILABAD",
+        "station_code": "ADB"
+      }
+    ],
+    "ADONI": [
+      {
+        "station_name": "ADONI",
+        "station_code": "AD"
+      }
+    ],
+    "ADRA": [
+      {
+        "station_name": "ADRA",
+        "station_code": "ADRA"
+      }
+    ],
+    "AGARTALA": [
+      {
+        "station_name": "AGARTALA",
+        "station_code": "AGTL"
+      }
+    ],
+    "AGRA": [
+      {
+        "station_name": "AGRA FORT",
+        "station_code": "AF"
+      },
+      {
+        "station_name": "AGRA CANTT.",
+        "station_code": "AGC"
+      }
+    ],
+    "AHMADNAGAR": [
+      {
+        "station_name": "AHMADNAGAR",
+        "station_code": "ANG"
+      }
+    ],
+    "AHMEDABAD": [
+      {
+        "station_name": "AHMEDABAD",
+        "station_code": "ADI"
+      }
+    ],
+    "AJMER": [
+      {
+        "station_name": "AJMER",
+        "station_code": "AII"
+      }
+    ],
+    "AJNI": [
+      {
+        "station_name": "AJNI",
+        "station_code": "AJNI"
+      }
+    ],
+    "AKOLA": [
+      {
+        "station_name": "AKOLA",
+        "station_code": "AK"
+      }
+    ],
+    "ALIGARH": [
+      {
+        "station_name": "ALIGARH",
+        "station_code": "ALJN"
+      }
+    ],
+    "ALIPURDUAR": [
+      {
+        "station_name": "ALIPURDUAR JN.",
+        "station_code": "APDJ"
+      }
+    ],
+    "ALLAHABAD": [
+      {
+        "station_name": "ALLAHABAD",
+        "station_code": "ALD"
+      }
+    ],
+    "ALAPPUZHA": [
+      {
+        "station_name": "ALAPPUZHA",
+        "station_code": "ALLP"
+      }
+    ],
+    "ALNAWAR": [
+      {
+        "station_name": "ALNAWAR JN.",
+        "station_code": "LWR"
+      }
+    ],
+    "ALUVA": [
+      {
+        "station_name": "ALUVA",
+        "station_code": "AWY"
+      }
+    ],
+    "ALWAR": [
+      {
+        "station_name": "ALWAR",
+        "station_code": "AWR"
+      }
+    ],
+    "AMALNER": [
+      {
+        "station_name": "AMALNER",
+        "station_code": "AN"
+      }
+    ],
+    "AMB_ANDAVRA": [
+      {
+        "station_name": "AMB ANDAVRA",
+        "station_code": "AADR"
+      }
+    ],
+    "AMBALA": [
+      {
+        "station_name": "AMBALA CANTT.",
+        "station_code": "UMB"
+      }
+    ],
+    "AMBIKAPUR": [
+      {
+        "station_name": "AMBIKAPUR",
+        "station_code": "ABKP"
+      }
+    ],
+    "AMLA": [
+      {
+        "station_name": "AMLA",
+        "station_code": "AMLA"
+      }
+    ],
+    "AMRITSAR": [
+      {
+        "station_name": "AMRITSAR",
+        "station_code": "ASR"
+      }
+    ],
+    "ANAKAPALLE": [
+      {
+        "station_name": "ANAKAPALLE",
+        "station_code": "AKP"
+      }
+    ],
+    "ANAND": [
+      {
+        "station_name": "ANAND",
+        "station_code": "ANND"
+      },
+      {
+        "station_name": "ANAND NAGAR",
+        "station_code": "ANDN"
+      },
+      {
+        "station_name": "ANAND VIHAR TERMINUS",
+        "station_code": "ANVT"
+      }
+    ],
+    "ANANTAPUR": [
+      {
+        "station_name": "ANANTAPUR",
+        "station_code": "ATP"
+      }
+    ],
+    "ANGUL": [
+      {
+        "station_name": "ANGUL",
+        "station_code": "ANGL"
+      }
+    ],
+    "ANNAVARAM": [
+      {
+        "station_name": "ANNAVARAM",
+        "station_code": "ANV"
+      }
+    ],
+    "ANUPPUR": [
+      {
+        "station_name": "ANUPPUR",
+        "station_code": "APR"
+      }
+    ],
+    "ARA": [
+      {
+        "station_name": "ARA",
+        "station_code": "ARA"
+      }
+    ],
+    "ARAKKONAM": [
+      {
+        "station_name": "ARAKKONAM",
+        "station_code": "AJJ"
+      }
+    ],
+    "ARSIKERE": [
+      {
+        "station_name": "ARSIKERE",
+        "station_code": "ASK"
+      }
+    ],
+    "ASANSOL": [
+      {
+        "station_name": "ASANSOL",
+        "station_code": "ASN"
+      }
+    ],
+    "AUNRIHAR": [
+      {
+        "station_name": "AUNRIHAR",
+        "station_code": "ARJ"
+      }
+    ],
+    "AURANGABAD": [
+      {
+        "station_name": "AURANGABAD",
+        "station_code": "AWB"
+      }
+    ],
+    "AYODHYA": [
+      {
+        "station_name": "AYODHYA",
+        "station_code": "AY"
+      }
+    ],
+    "AZAMGARH": [
+      {
+        "station_name": "AZAMGARH",
+        "station_code": "AMH"
+      }
+    ],
+    "AZIMGANJ": [
+      {
+        "station_name": "AZIMGANJ JN.",
+        "station_code": "AZ"
+      }
+    ],
+    "BADARPUR": [
+      {
+        "station_name": "BADARPUR",
+        "station_code": "BPB"
+      }
+    ],
+    "BADNERA": [
+      {
+        "station_name": "BADNERA JN.",
+        "station_code": "BD"
+      }
+    ],
+    "BAGALKOT": [
+      {
+        "station_name": "BAGALKOT",
+        "station_code": "BGK"
+      }
+    ],
+    "BAGHPAT": [
+      {
+        "station_name": "BAGHPAT ROAD",
+        "station_code": "BPM"
+      }
+    ],
+    "BAIDYANATHDHAM": [
+      {
+        "station_name": "BAIDYANATHDHAM",
+        "station_code": "BDME"
+      }
+    ],
+    "BAKHTIYARPUR": [
+      {
+        "station_name": "BAKHTIYARPUR",
+        "station_code": "BKP"
+      }
+    ],
+    "BALASORE": [
+      {
+        "station_name": "BALASORE",
+        "station_code": "BLS"
+      }
+    ],
+    "BALAGHAT": [
+      {
+        "station_name": "BALAGHAT",
+        "station_code": "BTC"
+      }
+    ],
+    "BALANGIR": [
+      {
+        "station_name": "BALANGIR",
+        "station_code": "BLGR"
+      }
+    ],
+    "BALUGAON": [
+      {
+        "station_name": "BALUGAON",
+        "station_code": "BALU"
+      }
+    ],
+    "BALURGHAT": [
+      {
+        "station_name": "BALURGHAT",
+        "station_code": "BLGT"
+      }
+    ],
+    "BALHARSHAH": [
+      {
+        "station_name": "BALHARSHAH",
+        "station_code": "BPQ"
+      }
+    ],
+    "BALLIA": [
+      {
+        "station_name": "BALLIA",
+        "station_code": "BUI"
+      }
+    ],
+    "BANARHAT": [
+      {
+        "station_name": "BANARHAT",
+        "station_code": "BNQ"
+      }
+    ],
+    "BANDA": [
+      {
+        "station_name": "BANDA JN.",
+        "station_code": "BNDA"
+      }
+    ],
+    "BANDEL": [
+      {
+        "station_name": "BANDEL JN.",
+        "station_code": "BDC"
+      }
+    ],
+    "BANDIKUI": [
+      {
+        "station_name": "BANDIKUI JN.",
+        "station_code": "BKI"
+      }
+    ],
+    "BANGALORE": [
+      {
+        "station_name": "BANGALORE CITY",
+        "station_code": "SBC"
+      },
+      {
+        "station_name": "BANGALORE CANTT.",
+        "station_code": "BNC"
+      }
+    ],
+    "BANGARAPET": [
+      {
+        "station_name": "BANGARAPET",
+        "station_code": "BWT"
+      }
+    ],
+    "BANGRIPOSI": [
+      {
+        "station_name": "BANGRIPOSI",
+        "station_code": "BGY"
+      }
+    ],
+    "BANKURA": [
+      {
+        "station_name": "BANKURA",
+        "station_code": "BQA"
+      }
+    ],
+    "BANMANKHI": [
+      {
+        "station_name": "BANMANKHI",
+        "station_code": "BNKI"
+      }
+    ],
+    "BAPATLA": [
+      {
+        "station_name": "BAPATLA",
+        "station_code": "BPP"
+      }
+    ],
+    "BARABANKI": [
+      {
+        "station_name": "BARABANKI JN.",
+        "station_code": "BBK"
+      }
+    ],
+    "BARABIL": [
+      {
+        "station_name": "BARABIL",
+        "station_code": "BBN"
+      }
+    ],
+    "BARAN": [
+      {
+        "station_name": "BARAN",
+        "station_code": "BAZ"
+      }
+    ],
+    "BARAUNI": [
+      {
+        "station_name": "BARAUNI JN.",
+        "station_code": "BJU"
+      }
+    ],
+    "BARAUT": [
+      {
+        "station_name": "BARAUT",
+        "station_code": "BTU"
+      }
+    ],
+    "BARAPALLI": [
+      {
+        "station_name": "BARAPALLI",
+        "station_code": "BRPL"
+      }
+    ],
+    "BARDDHAMAN": [
+      {
+        "station_name": "BARDDHAMAN JN.",
+        "station_code": "BWN"
+      }
+    ],
+    "BAREILLY": [
+      {
+        "station_name": "BAREILLY",
+        "station_code": "BE"
+      }
+    ],
+    "BARGARH": [
+      {
+        "station_name": "BARGARH ROAD",
+        "station_code": "BRGA"
+      }
+    ],
+    "BARHNI": [
+      {
+        "station_name": "BARHNI",
+        "station_code": "BNY"
+      }
+    ],
+    "BARKAKANA": [
+      {
+        "station_name": "BARKAKANA",
+        "station_code": "BRKA"
+      }
+    ],
+    "BARMER": [
+      {
+        "station_name": "BARMER",
+        "station_code": "BME"
+      }
+    ],
+    "BAROG": [
+      {
+        "station_name": "BAROG",
+        "station_code": "BOF"
+      }
+    ],
+    "BARSOI": [
+      {
+        "station_name": "BARSOI",
+        "station_code": "BOE"
+      }
+    ],
+    "BARWADIH": [
+      {
+        "station_name": "BARWADIH",
+        "station_code": "BRWD"
+      }
+    ],
+    "BASAR": [
+      {
+        "station_name": "BASAR",
+        "station_code": "BSX"
+      }
+    ],
+    "BASTI": [
+      {
+        "station_name": "BASTI",
+        "station_code": "BST"
+      }
+    ],
+    "BATHINDA": [
+      {
+        "station_name": "BATHINDA JN.",
+        "station_code": "BTI"
+      }
+    ],
+    "BAYANA": [
+      {
+        "station_name": "BAYANA",
+        "station_code": "BXN"
+      }
+    ],
+    "BEAS": [
+      {
+        "station_name": "BEAS",
+        "station_code": "BEAS"
+      }
+    ],
+    "BEAWAR": [
+      {
+        "station_name": "BEAWAR",
+        "station_code": "BER"
+      }
+    ],
+    "BELAPUR": [
+      {
+        "station_name": "BELAPUR",
+        "station_code": "BAP"
+      }
+    ],
+    "BELGAUM": [
+      {
+        "station_name": "BELGAUM",
+        "station_code": "BGM"
+      }
+    ],
+    "BELLARY": [
+      {
+        "station_name": "BELLARY JN.",
+        "station_code": "BAY"
+      }
+    ],
+    "BETTIAH": [
+      {
+        "station_name": "BETTIAH",
+        "station_code": "BTH"
+      }
+    ],
+    "BETUL": [
+      {
+        "station_name": "BETUL",
+        "station_code": "BZU"
+      }
+    ],
+    "BHADOHI": [
+      {
+        "station_name": "BHADOHI",
+        "station_code": "BOY"
+      }
+    ],
+    "BHADRAK": [
+      {
+        "station_name": "BHADRAK",
+        "station_code": "BHC"
+      }
+    ],
+    "BHAGALPUR": [
+      {
+        "station_name": "BHAGALPUR",
+        "station_code": "BGP"
+      }
+    ],
+    "BHAGAT_KI_KOTHI": [
+      {
+        "station_name": "BHAGAT KI KOTHI",
+        "station_code": "BGKI"
+      }
+    ],
+    "BHARATPUR": [
+      {
+        "station_name": "BHARATPUR",
+        "station_code": "BTE"
+      }
+    ],
+    "BHARUCH": [
+      {
+        "station_name": "BHARUCH",
+        "station_code": "BH"
+      }
+    ],
+    "BHATAPARA": [
+      {
+        "station_name": "BHATAPARA",
+        "station_code": "BYT"
+      }
+    ],
+    "BHATKAL": [
+      {
+        "station_name": "BHATKAL",
+        "station_code": "BTJL"
+      }
+    ],
+    "BHATNI": [
+      {
+        "station_name": "BHATNI",
+        "station_code": "BTT"
+      }
+    ],
+    "BHAVNAGAR": [
+      {
+        "station_name": "BHAVNAGAR (T)",
+        "station_code": "BVC"
+      }
+    ],
+    "BHAWANIPATNA": [
+      {
+        "station_name": "BHAWANIPATNA",
+        "station_code": "BWPI"
+      }
+    ],
+    "BHILWARA": [
+      {
+        "station_name": "BHILWARA",
+        "station_code": "BHL"
+      }
+    ],
+    "BHIMAVARAM": [
+      {
+        "station_name": "BHIMAVARAM JN.",
+        "station_code": "BVRM"
+      },
+      {
+        "station_name": "BHIMAVARAM TOWN",
+        "station_code": "BVRT"
+      }
+    ],
+    "BHIND": [
+      {
+        "station_name": "BHIND",
+        "station_code": "BIX"
+      }
+    ],
+    "BHIWANI": [
+      {
+        "station_name": "BHIWANI",
+        "station_code": "BNW"
+      }
+    ],
+    "BHOPAL": [
+      {
+        "station_name": "BHOPAL",
+        "station_code": "BPL"
+      }
+    ],
+    "BHUBANESWAR": [
+      {
+        "station_name": "BHUBANESWAR",
+        "station_code": "BBS"
+      }
+    ],
+    "BHUJ": [
+      {
+        "station_name": "BHUJ",
+        "station_code": "BHUJ"
+      }
+    ],
+    "BHUSAVAL": [
+      {
+        "station_name": "BHUSAVAL",
+        "station_code": "BSL"
+      }
+    ],
+    "BIJAPUR": [
+      {
+        "station_name": "BIJAPUR",
+        "station_code": "BJP"
+      }
+    ],
+    "BIJNOR": [
+      {
+        "station_name": "BIJNOR",
+        "station_code": "BJO"
+      }
+    ],
+    "BIKANER": [
+      {
+        "station_name": "BIKANER",
+        "station_code": "BKN"
+      }
+    ],
+    "BILASPUR": [
+      {
+        "station_name": "BILASPUR JN.",
+        "station_code": "BSP"
+      }
+    ],
+    "BINA": [
+      {
+        "station_name": "BINA",
+        "station_code": "BINA"
+      }
+    ],
+    "BINNAGURI": [
+      {
+        "station_name": "BINNAGURI",
+        "station_code": "BNV"
+      }
+    ],
+    "BIRUR": [
+      {
+        "station_name": "BIRUR",
+        "station_code": "RRB"
+      }
+    ],
+    "BITRAGUNTA": [
+      {
+        "station_name": "BITRAGUNTA",
+        "station_code": "BTTR"
+      }
+    ],
+    "BIYAVARA_RAJGARH": [
+      {
+        "station_name": "BIYAVARA RAJGARH",
+        "station_code": "BRRG"
+      }
+    ],
+    "BOBBILI": [
+      {
+        "station_name": "BOBBILI",
+        "station_code": "VBL"
+      }
+    ],
+    "BOINDA": [
+      {
+        "station_name": "BOINDA",
+        "station_code": "BONA"
+      }
+    ],
+    "BAGHBAHAR": [
+      {
+        "station_name": "BAGHBAHAR",
+        "station_code": "BGBR"
+      }
+    ],
+    "BOKARO": [
+      {
+        "station_name": "BOKARO STEEL CITY",
+        "station_code": "BKSC"
+      }
+    ],
+    "BOLPUR": [
+      {
+        "station_name": "BOLPUR SHANTINIKETAN",
+        "station_code": "BHP"
+      }
+    ],
+    "BORIVALI": [
+      {
+        "station_name": "BORIVALI",
+        "station_code": "BVI"
+      }
+    ],
+    "BOTAD": [
+      {
+        "station_name": "BOTAD",
+        "station_code": "BTD"
+      }
+    ],
+    "BUDAUN": [
+      {
+        "station_name": "BUDAUN",
+        "station_code": "BEM"
+      }
+    ],
+    "BUNDI": [
+      {
+        "station_name": "BUNDI",
+        "station_code": "BUDI"
+      }
+    ],
+    "BURHANPUR": [
+      {
+        "station_name": "BURHANPUR",
+        "station_code": "BAU"
+      }
+    ],
+    "BURHWAL": [
+      {
+        "station_name": "BURHWAL",
+        "station_code": "BUW"
+      }
+    ],
+    "BUXAR": [
+      {
+        "station_name": "BUXAR",
+        "station_code": "BXR"
+      }
+    ],
+    "CANACONA": [
+      {
+        "station_name": "CANACONA",
+        "station_code": "CNO"
+      }
+    ],
+    "CHAKIA": [
+      {
+        "station_name": "CHAKIA",
+        "station_code": "CAA"
+      }
+    ],
+    "CHAKKI_BANK": [
+      {
+        "station_name": "CHAKKI BANK",
+        "station_code": "CHKB"
+      }
+    ],
+    "CHAKRADHARPUR": [
+      {
+        "station_name": "CHAKRADHARPUR",
+        "station_code": "CKP"
+      }
+    ],
+    "CHALISGAON": [
+      {
+        "station_name": "CHALISGAON",
+        "station_code": "CSN"
+      }
+    ],
+    "CHAMPA": [
+      {
+        "station_name": "CHAMPA",
+        "station_code": "CPH"
+      }
+    ],
+    "CHANDAUSI": [
+      {
+        "station_name": "CHANDAUSI",
+        "station_code": "CH"
+      }
+    ],
+    "CHANDERIYA": [
+      {
+        "station_name": "CHANDERIYA",
+        "station_code": "CNA"
+      }
+    ],
+    "CHANDIGARH": [
+      {
+        "station_name": "CHANDIGARH",
+        "station_code": "CDG"
+      }
+    ],
+    "CHANDIL": [
+      {
+        "station_name": "CHANDIL",
+        "station_code": "CNI"
+      }
+    ],
+    "CHANDRAPUR": [
+      {
+        "station_name": "CHANDRAPUR",
+        "station_code": "CD"
+      }
+    ],
+    "CHANDRAPURA": [
+      {
+        "station_name": "CHANDRAPURA",
+        "station_code": "CRP"
+      }
+    ],
+    "CHAPARMUKH": [
+      {
+        "station_name": "CHAPARMUKH",
+        "station_code": "CPK"
+      }
+    ],
+    "CHATRAPUR": [
+      {
+        "station_name": "CHATRAPUR",
+        "station_code": "CAP"
+      }
+    ],
+    "CHENGALPATTU": [
+      {
+        "station_name": "CHENGALPATTU JN.",
+        "station_code": "CGL"
+      }
+    ],
+    "CHENGANNUR": [
+      {
+        "station_name": "CHENGANNUR",
+        "station_code": "CNGR"
+      }
+    ],
+    "CHENNAI": [
+      {
+        "station_name": "CHENNAI CENTRAL",
+        "station_code": "MAS"
+      },
+      {
+        "station_name": "CHENNAI EGMORE",
+        "station_code": "MS"
+      }
+    ],
+    "CHHAPRA": [
+      {
+        "station_name": "CHHAPRA",
+        "station_code": "CPR"
+      }
+    ],
+    "CHHINDWARA": [
+      {
+        "station_name": "CHHINDWARA",
+        "station_code": "CWA"
+      }
+    ],
+    "CHIDAMBARAM": [
+      {
+        "station_name": "CHIDAMBARAM",
+        "station_code": "CDM"
+      }
+    ],
+    "CHIKJAJUR": [
+      {
+        "station_name": "CHIKJAJUR",
+        "station_code": "JRU"
+      }
+    ],
+    "CHIPLUN": [
+      {
+        "station_name": "CHIPLUN",
+        "station_code": "CHI"
+      }
+    ],
+    "CHIRALA": [
+      {
+        "station_name": "CHIRALA",
+        "station_code": "CLX"
+      }
+    ],
+    "CHITRAKOOTDHAM": [
+      {
+        "station_name": "CHITRAKOOTDHAM KARVI",
+        "station_code": "CKTD"
+      }
+    ],
+    "CHITTRANJAN": [
+      {
+        "station_name": "CHITTRANJAN",
+        "station_code": "CRJ"
+      }
+    ],
+    "CHITTAURGARH": [
+      {
+        "station_name": "CHITTAURGARH",
+        "station_code": "COR"
+      }
+    ],
+    "CHITTOOR": [
+      {
+        "station_name": "CHITTOOR",
+        "station_code": "CTO"
+      }
+    ],
+    "CHOPAN": [
+      {
+        "station_name": "CHOPAN",
+        "station_code": "CPU"
+      }
+    ],
+    "CHUNAR": [
+      {
+        "station_name": "CHUNAR",
+        "station_code": "CAR"
+      }
+    ],
+    "CHURU": [
+      {
+        "station_name": "CHURU",
+        "station_code": "CUR"
+      }
+    ],
+    "COIMBATORE": [
+      {
+        "station_name": "COIMBATORE JN.",
+        "station_code": "CBE"
+      }
+    ],
+    "COONOOR": [
+      {
+        "station_name": "COONOOR",
+        "station_code": "ONR"
+      }
+    ],
+    "CUDDALORE": [
+      {
+        "station_name": "CUDDALORE PORT",
+        "station_code": "CUPJ"
+      }
+    ],
+    "CUDDAPAH": [
+      {
+        "station_name": "CUDDAPAH",
+        "station_code": "HX"
+      }
+    ],
+    "CUTTACK": [
+      {
+        "station_name": "CUTTACK",
+        "station_code": "CTC"
+      }
+    ],
+    "DADAR": [
+      {
+        "station_name": "DADAR CENTRAL",
+        "station_code": "DR"
+      },
+      {
+        "station_name": "DADAR WESTERN",
+        "station_code": "DDR"
+      }
+    ],
+    "DARBHANGA": [
+      {
+        "station_name": "DARBHANGA",
+        "station_code": "DBG"
+      }
+    ],
+    "DAUND": [
+      {
+        "station_name": "DAUND",
+        "station_code": "DD"
+      }
+    ],
+    "DAVANGERE": [
+      {
+        "station_name": "DAVANGERE",
+        "station_code": "DVG"
+      }
+    ],
+    "DEHRADUN": [
+      {
+        "station_name": "DEHRADUN",
+        "station_code": "DDN"
+      }
+    ],
+    "DEORIASADAR": [
+      {
+        "station_name": "DEORIASADAR",
+        "station_code": "DEOS"
+      }
+    ],
+    "DELHI": [
+      {
+        "station_name": "OLD DELHI",
+        "station_code": "DLI"
+      },
+      {
+        "station_name": "NEW DELHI",
+        "station_code": "NDLS"
+      },
+      {
+        "station_name": "DELHI CANTT.",
+        "station_code": "DEC"
+      },
+      {
+        "station_name": "DELHI SARAI ROHILLA",
+        "station_code": "DEE"
+      },
+      {
+        "station_name": "DELHI SHAHDARA",
+        "station_code": "DSA"
+      },
+      {
+        "station_name": "ANAND VIHAR TERMINUS",
+        "station_code": "ANVT"
+      },
+      {
+        "station_name": "NIZAMUDDIN",
+        "station_code": "NZM"
+      },
+      {
+        "station_name": "DELHI SABZI MANDI",
+        "station_code": "SZM"
+      }
+    ],
+    "DHANBAD": [
+      {
+        "station_name": "DHANBAD",
+        "station_code": "DHN"
+      }
+    ],
+    "DHARWAD": [
+      {
+        "station_name": "DHARWAD",
+        "station_code": "DWR"
+      }
+    ],
+    "DIBRUGARH": [
+      {
+        "station_name": "DIBRUGARH",
+        "station_code": "DBRG"
+      },
+      {
+        "station_name": "DIBRUGARH TOWN",
+        "station_code": "DBRT"
+      }
+    ],
+    "DINDIGUL": [
+      {
+        "station_name": "DINDIGUL JN.",
+        "station_code": "DG"
+      }
+    ],
+    "DURG": [
+      {
+        "station_name": "DURG",
+        "station_code": "DURG"
+      }
+    ],
+    "DURGAPUR": [
+      {
+        "station_name": "DURGAPUR",
+        "station_code": "DGR"
+      }
+    ],
+    "DWARKA": [
+      {
+        "station_name": "DWARKA",
+        "station_code": "DWK"
+      }
+    ],
+    "ELURU": [
+      {
+        "station_name": "ELURU",
+        "station_code": "EE"
+      }
+    ],
+    "ERNAKULAM": [
+      {
+        "station_name": "ERNAKULAM JN.",
+        "station_code": "ERS"
+      },
+      {
+        "station_name": "ERNAKULAM TOWN",
+        "station_code": "ERN"
+      }
+    ],
+    "ERODE": [
+      {
+        "station_name": "ERODE",
+        "station_code": "ED"
+      }
+    ],
+    "ETAWAH": [
+      {
+        "station_name": "ETAWAH",
+        "station_code": "ETW"
+      }
+    ],
+    "FAIZABAD": [
+      {
+        "station_name": "FAIZABAD",
+        "station_code": "FD"
+      }
+    ],
+    "FARIDABAD": [
+      {
+        "station_name": "FARIDABAD",
+        "station_code": "FDB"
+      }
+    ],
+    "FARRUKHABAD": [
+      {
+        "station_name": "FARRUKHABAD",
+        "station_code": "FBD"
+      }
+    ],
+    "FATEHPUR": [
+      {
+        "station_name": "FATEHPUR",
+        "station_code": "FTP"
+      }
+    ],
+    "FAZILKA": [
+      {
+        "station_name": "FAZILKA",
+        "station_code": "FKA"
+      }
+    ],
+    "FIROZABAD": [
+      {
+        "station_name": "FIROZABAD",
+        "station_code": "FZD"
+      }
+    ],
+    "FIROZPUR": [
+      {
+        "station_name": "FIROZPUR CITY",
+        "station_code": "FZP"
+      },
+      {
+        "station_name": "FIROZPUR CANTT.",
+        "station_code": "FZR"
+      }
+    ],
+    "GADAG": [
+      {
+        "station_name": "GADAG",
+        "station_code": "GDG"
+      }
+    ],
+    "GANDHIDHAM": [
+      {
+        "station_name": "GANDHIDHAM",
+        "station_code": "GIM"
+      }
+    ],
+    "GANDHINAGAR": [
+      {
+        "station_name": "GANDHINAGAR",
+        "station_code": "GADJ"
+      }
+    ],
+    "GAYA": [
+      {
+        "station_name": "GAYA",
+        "station_code": "GAYA"
+      }
+    ],
+    "GHAZIABAD": [
+      {
+        "station_name": "GHAZIABAD",
+        "station_code": "GZB"
+      }
+    ],
+    "GODHRA": [
+      {
+        "station_name": "GODHRA",
+        "station_code": "GDA"
+      }
+    ],
+    "GONDA": [
+      {
+        "station_name": "GONDA",
+        "station_code": "GD"
+      }
+    ],
+    "GONDIA": [
+      {
+        "station_name": "GONDIA",
+        "station_code": "G"
+      }
+    ],
+    "GOOTY": [
+      {
+        "station_name": "GOOTY",
+        "station_code": "GY"
+      }
+    ],
+    "GORAKHPUR": [
+      {
+        "station_name": "GORAKHPUR",
+        "station_code": "GKP"
+      }
+    ],
+    "GUDIVADA": [
+      {
+        "station_name": "GUDIVADA",
+        "station_code": "GDV"
+      }
+    ],
+    "GUDUR": [
+      {
+        "station_name": "GUDUR",
+        "station_code": "GDR"
+      }
+    ],
+    "GULBARGA": [
+      {
+        "station_name": "GULBARGA",
+        "station_code": "GR"
+      }
+    ],
+    "GUNA": [
+      {
+        "station_name": "GUNA",
+        "station_code": "GUNA"
+      }
+    ],
+    "GUNTAKAL": [
+      {
+        "station_name": "GUNTAKAL",
+        "station_code": "GTL"
+      }
+    ],
+    "GUNTUR": [
+      {
+        "station_name": "GUNTUR",
+        "station_code": "GNT"
+      }
+    ],
+    "GURGAON": [
+      {
+        "station_name": "GURGAON",
+        "station_code": "GGN"
+      }
+    ],
+    "GURUVAYUR": [
+      {
+        "station_name": "GURUVAYUR",
+        "station_code": "GUV"
+      }
+    ],
+    "GUWAHATI": [
+      {
+        "station_name": "GUWAHATI",
+        "station_code": "GHY"
+      }
+    ],
+    "GWALIOR": [
+      {
+        "station_name": "GWALIOR",
+        "station_code": "GWL"
+      }
+    ],
+    "HAJIPUR": [
+      {
+        "station_name": "HAJIPUR",
+        "station_code": "HJP"
+      }
+    ],
+    "HALDIA": [
+      {
+        "station_name": "HALDIA",
+        "station_code": "HLZ"
+      }
+    ],
+    "HANUMANGARH": [
+      {
+        "station_name": "HANUMANGARH",
+        "station_code": "HMH"
+      }
+    ],
+    "HAPUR": [
+      {
+        "station_name": "HAPUR",
+        "station_code": "HPU"
+      }
+    ],
+    "HARDA": [
+      {
+        "station_name": "HARDA",
+        "station_code": "HD"
+      }
+    ],
+    "HARIDWAR": [
+      {
+        "station_name": "HARIDWAR",
+        "station_code": "HW"
+      }
+    ],
+    "HATIA": [
+      {
+        "station_name": "HATIA",
+        "station_code": "HTE"
+      }
+    ],
+    "HISAR": [
+      {
+        "station_name": "HISAR",
+        "station_code": "HSR"
+      }
+    ],
+    "HOSHANGABAD": [
+      {
+        "station_name": "HOSHANGABAD",
+        "station_code": "HBD"
+      }
+    ],
+    "HOSPET": [
+      {
+        "station_name": "HOSPET",
+        "station_code": "HPT"
+      }
+    ],
+    "HOWRAH": [
+      {
+        "station_name": "HOWRAH",
+        "station_code": "HWH"
+      }
+    ],
+    "HUBLI": [
+      {
+        "station_name": "HUBLI",
+        "station_code": "UBL"
+      }
+    ],
+    "HYDERABAD": [
+      {
+        "station_name": "HYDERABAD",
+        "station_code": "HYB"
+      },
+      {
+        "station_name": "SECUNDERABAD",
+        "station_code": "SC"
+      },
+      {
+        "station_name": "KACHEGUDA",
+        "station_code": "KCG"
+      }
+    ],
+    "INDORE": [
+      {
+        "station_name": "INDORE",
+        "station_code": "INDB"
+      }
+    ],
+    "ITARSI": [
+      {
+        "station_name": "ITARSI",
+        "station_code": "ET"
+      }
+    ],
+    "JABALPUR": [
+      {
+        "station_name": "JABALPUR",
+        "station_code": "JBP"
+      }
+    ],
+    "JAGDALPUR": [
+      {
+        "station_name": "JAGDALPUR",
+        "station_code": "JDB"
+      }
+    ],
+    "JAIPUR": [
+      {
+        "station_name": "JAIPUR",
+        "station_code": "JP"
+      }
+    ],
+    "JAISALMER": [
+      {
+        "station_name": "JAISALMER",
+        "station_code": "JSM"
+      }
+    ],
+    "JALANDHAR": [
+      {
+        "station_name": "JALANDHAR CANTT.",
+        "station_code": "JRC"
+      },
+      {
+        "station_name": "JALANDHAR CITY",
+        "station_code": "JUC"
+      }
+    ],
+    "JALGAON": [
+      {
+        "station_name": "JALGAON",
+        "station_code": "JL"
+      }
+    ],
+    "JALNA": [
+      {
+        "station_name": "JALNA",
+        "station_code": "J"
+      }
+    ],
+    "JALPAIGURI": [
+      {
+        "station_name": "JALPAIGURI",
+        "station_code": "JPG"
+      },
+      {
+        "station_name": "NEW JALPAIGURI",
+        "station_code": "NJP"
+      }
+    ],
+    "JAMALPUR": [
+      {
+        "station_name": "JAMALPUR",
+        "station_code": "JMP"
+      }
+    ],
+    "JAMMU": [
+      {
+        "station_name": "JAMMU TAWI",
+        "station_code": "JAT"
+      }
+    ],
+    "JAMNAGAR": [
+      {
+        "station_name": "JAMNAGAR",
+        "station_code": "JAM"
+      }
+    ],
+    "JAUNPUR": [
+      {
+        "station_name": "JAUNPUR JN.",
+        "station_code": "JNU"
+      }
+    ],
+    "JHANSI": [
+      {
+        "station_name": "V LAKSHMIBAI",
+        "station_code": "VGLJ"
+      }
+    ],
+    "JHARSUGUDA": [
+      {
+        "station_name": "JHARSUGUDA",
+        "station_code": "JSG"
+      }
+    ],
+    "JIND": [
+      {
+        "station_name": "JIND",
+        "station_code": "JIND"
+      }
+    ],
+    "JODHPUR": [
+      {
+        "station_name": "JODHPUR",
+        "station_code": "JU"
+      }
+    ],
+    "JORHAT": [
+      {
+        "station_name": "JORHAT",
+        "station_code": "JT"
+      }
+    ],
+    "JUNAGADH": [
+      {
+        "station_name": "JUNAGADH JN.",
+        "station_code": "JND"
+      }
+    ],
+    "KAKINADA": [
+      {
+        "station_name": "KAKINADA PORT",
+        "station_code": "COA"
+      }
+    ],
+    "KALKA": [
+      {
+        "station_name": "KALKA",
+        "station_code": "KLK"
+      }
+    ],
+    "KALYAN": [
+      {
+        "station_name": "KALYAN",
+        "station_code": "KYN"
+      }
+    ],
+    "KAMAKHYA": [
+      {
+        "station_name": "KAMAKHYA",
+        "station_code": "KYQ"
+      }
+    ],
+    "KANCHIPURAM": [
+      {
+        "station_name": "KANCHIPURAM",
+        "station_code": "CJ"
+      }
+    ],
+    "KANNIYAKUMARI": [
+      {
+        "station_name": "KANNIYAKUMARI",
+        "station_code": "CAPE"
+      }
+    ],
+    "KANNUR": [
+      {
+        "station_name": "KANNUR",
+        "station_code": "CAN"
+      }
+    ],
+    "KANPUR": [
+      {
+        "station_name": "KANPUR CENTRAL",
+        "station_code": "CNB"
+      },
+      {
+        "station_name": "KANPUR ANWARGANJ",
+        "station_code": "CPA"
+      }
+    ],
+    "KARAIKAL": [
+      {
+        "station_name": "KARAIKAL",
+        "station_code": "KIK"
+      }
+    ],
+    "KARNAL": [
+      {
+        "station_name": "KARNAL",
+        "station_code": "KUN"
+      }
+    ],
+    "KARUR": [
+      {
+        "station_name": "KARUR",
+        "station_code": "KRR"
+      }
+    ],
+    "KARWAR": [
+      {
+        "station_name": "KARWAR",
+        "station_code": "KAWR"
+      }
+    ],
+    "KASARAGOD": [
+      {
+        "station_name": "KASARAGOD",
+        "station_code": "KGQ"
+      }
+    ],
+    "KATHGODAM": [
+      {
+        "station_name": "KATHGODAM",
+        "station_code": "KGM"
+      }
+    ],
+    "KATIHAR": [
+      {
+        "station_name": "KATIHAR",
+        "station_code": "KIR"
+      }
+    ],
+    "KATNI": [
+      {
+        "station_name": "KATNI",
+        "station_code": "KTE"
+      },
+      {
+        "station_name": "KATNI MURWARA",
+        "station_code": "KMZ"
+      }
+    ],
+    "KHARAGPUR": [
+      {
+        "station_name": "KHARAGPUR",
+        "station_code": "KGP"
+      }
+    ],
+    "KHURDA": [
+      {
+        "station_name": "KHURDA ROAD",
+        "station_code": "KUR"
+      }
+    ],
+    "KHURJA": [
+      {
+        "station_name": "KHURJA",
+        "station_code": "KRJ"
+      }
+    ],
+    "KISHANGANJ": [
+      {
+        "station_name": "KISHANGANJ",
+        "station_code": "KNE"
+      }
+    ],
+    "KISHANGARH": [
+      {
+        "station_name": "KISHANGARH",
+        "station_code": "KSG"
+      }
+    ],
+    "KIUL": [
+      {
+        "station_name": "KIUL",
+        "station_code": "KIUL"
+      }
+    ],
+    "KOCHUVELI": [
+      {
+        "station_name": "KOCHUVELI",
+        "station_code": "KCVL"
+      }
+    ],
+    "KODAIKANAL": [
+      {
+        "station_name": "KODAIKANAL ROAD",
+        "station_code": "KQN"
+      }
+    ],
+    "KOLKATA": [
+      {
+        "station_name": "KOLKATA",
+        "station_code": "KOAA"
+      },
+      {
+        "station_name": "SEALDAH",
+        "station_code": "SDAH"
+      }
+    ],
+    "KOLLAM": [
+      {
+        "station_name": "KOLLAM",
+        "station_code": "QLN"
+      }
+    ],
+    "KORAPUT": [
+      {
+        "station_name": "KORAPUT",
+        "station_code": "KRPU"
+      }
+    ],
+    "KORBA": [
+      {
+        "station_name": "KORBA",
+        "station_code": "KRBA"
+      }
+    ],
+    "KOTA": [
+      {
+        "station_name": "KOTA",
+        "station_code": "KOTA"
+      }
+    ],
+    "KOTDWARA": [
+      {
+        "station_name": "KOTDWARA",
+        "station_code": "KTW"
+      }
+    ],
+    "KOTTAYAM": [
+      {
+        "station_name": "KOTTAYAM",
+        "station_code": "KTYM"
+      }
+    ],
+    "KOZHIKODE": [
+      {
+        "station_name": "KOZHIKODE",
+        "station_code": "CLT"
+      }
+    ],
+    "KRISHNANAGAR": [
+      {
+        "station_name": "KRISHNANAGAR CITY",
+        "station_code": "KNJ"
+      }
+    ],
+    "KUMBAKONAM": [
+      {
+        "station_name": "KUMBAKONAM",
+        "station_code": "KMU"
+      }
+    ],
+    "KURNOOL": [
+      {
+        "station_name": "KURNOOL TOWN",
+        "station_code": "KRNT"
+      }
+    ],
+    "KURUKSHETRA": [
+      {
+        "station_name": "KURUKSHETRA",
+        "station_code": "KKDE"
+      }
+    ],
+    "LAKHIMPUR": [
+      {
+        "station_name": "LAKHIMPUR",
+        "station_code": "LMP"
+      },
+      {
+        "station_name": "NORTH LAKHIMPUR",
+        "station_code": "NLP"
+      }
+    ],
+    "LATUR": [
+      {
+        "station_name": "LATUR",
+        "station_code": "LUR"
+      }
+    ],
+    "LONAVLA": [
+      {
+        "station_name": "LONAVLA",
+        "station_code": "LNL"
+      }
+    ],
+    "LUCKNOW": [
+      {
+        "station_name": "LUCKNOW",
+        "station_code": "LJN/LKO"
+      }
+    ],
+    "LUDHIANA": [
+      {
+        "station_name": "LUDHIANA",
+        "station_code": "LDH"
+      }
+    ],
+    "LUMDING": [
+      {
+        "station_name": "LUMDING",
+        "station_code": "LMG"
+      }
+    ],
+    "MACHILIPATNAM": [
+      {
+        "station_name": "MACHILIPATNAM",
+        "station_code": "MTM"
+      }
+    ],
+    "MADGAON": [
+      {
+        "station_name": "MADGAON (GOA)",
+        "station_code": "MAO"
+      }
+    ],
+    "MADURAI": [
+      {
+        "station_name": "MADURAI JN.",
+        "station_code": "MDU"
+      }
+    ],
+    "MAHBUBNAGAR": [
+      {
+        "station_name": "MAHBUBNAGAR",
+        "station_code": "MBNR"
+      }
+    ],
+    "MAHESANA": [
+      {
+        "station_name": "MAHESANA",
+        "station_code": "MSH"
+      }
+    ],
+    "MAHOBA": [
+      {
+        "station_name": "MAHOBA",
+        "station_code": "MBA"
+      }
+    ],
+    "MALDA": [
+      {
+        "station_name": "MALDA TOWN",
+        "station_code": "MLDT"
+      }
+    ],
+    "MANGALORE": [
+      {
+        "station_name": "MANGALORE CENTRAL",
+        "station_code": "MAQ"
+      },
+      {
+        "station_name": "MANGALORE JN.",
+        "station_code": "MAJN"
+      }
+    ],
+    "MANMAD": [
+      {
+        "station_name": "MANMAD",
+        "station_code": "MMR"
+      }
+    ],
+    "MATHURA": [
+      {
+        "station_name": "MATHURA",
+        "station_code": "MTJ"
+      }
+    ],
+    "MAU": [
+      {
+        "station_name": "MAU",
+        "station_code": "MAU"
+      }
+    ],
+    "MAYILADUTURAI": [
+      {
+        "station_name": "MAYILADUTURAI JN.",
+        "station_code": "MV"
+      }
+    ],
+    "MEERUT": [
+      {
+        "station_name": "MEERUT CITY",
+        "station_code": "MTC"
+      }
+    ],
+    "METTUPALAYAM": [
+      {
+        "station_name": "METTUPALAYAM",
+        "station_code": "MTP"
+      }
+    ],
+    "MIRAJ": [
+      {
+        "station_name": "MIRAJ",
+        "station_code": "MRJ"
+      }
+    ],
+    "MIRZAPUR": [
+      {
+        "station_name": "MIRZAPUR",
+        "station_code": "MZP"
+      }
+    ],
+    "MOGA": [
+      {
+        "station_name": "MOGA",
+        "station_code": "MOF"
+      }
+    ],
+    "MOKAMA": [
+      {
+        "station_name": "MOKAMA",
+        "station_code": "MKA"
+      }
+    ],
+    "MORADABAD": [
+      {
+        "station_name": "MORADABAD",
+        "station_code": "MB"
+      }
+    ],
+    "MOTIHARI": [
+      {
+        "station_name": "MOTIHARI",
+        "station_code": "MKI"
+      }
+    ],
+    "MUGHALSARAI": [
+      {
+        "station_name": "MUGHALSARAI",
+        "station_code": "MGS"
+      }
+    ],
+    "MUMBAI": [
+      {
+        "station_name": "MUMBAI CENTRAL",
+        "station_code": "MMCT"
+      },
+      {
+        "station_name": "CHHATRAPATI SHIVAJI MAHARAJ (T)",
+        "station_code": "CSMT"
+      },
+      {
+        "station_name": "LOKMANYA TILAK (T)",
+        "station_code": "LTT"
+      },
+      {
+        "station_name": "BANDRA (T)",
+        "station_code": "BDTS"
+      },
+      {
+        "station_name": "DADAR",
+        "station_code": "DDR"
+      },
+      {
+        "station_name": "KURLA",
+        "station_code": "CLA"
+      },
+      {
+        "station_name": "BORIVALI",
+        "station_code": "BVI"
+      }
+    ],
+    "MUZAFFARPUR": [
+      {
+        "station_name": "MUZAFFARPUR",
+        "station_code": "MFP"
+      }
+    ],
+    "MYSORE": [
+      {
+        "station_name": "MYSORE",
+        "station_code": "MYS"
+      }
+    ],
+    "NADIAD": [
+      {
+        "station_name": "NADIAD",
+        "station_code": "ND"
+      }
+    ],
+    "NAGAPATTINAM": [
+      {
+        "station_name": "NAGAPATTINAM",
+        "station_code": "NGT"
+      }
+    ],
+    "NAGERCOIL": [
+      {
+        "station_name": "NAGERCOIL JN.",
+        "station_code": "NCJ"
+      }
+    ],
+    "NAGPUR": [
+      {
+        "station_name": "NAGPUR",
+        "station_code": "NGP"
+      }
+    ],
+    "NALGONDA": [
+      {
+        "station_name": "NALGONDA",
+        "station_code": "NLDA"
+      }
+    ],
+    "NAMAKKAL": [
+      {
+        "station_name": "NAMAKKAL",
+        "station_code": "NMKL"
+      }
+    ],
+    "NANDED": [
+      {
+        "station_name": "HAZUR SAHIB NANDED",
+        "station_code": "NED"
+      }
+    ],
+    "NANDYAL": [
+      {
+        "station_name": "NANDYAL",
+        "station_code": "NDL"
+      }
+    ],
+    "NARSINGHPUR": [
+      {
+        "station_name": "NARSINGHPUR",
+        "station_code": "NU"
+      }
+    ],
+    "NASIK": [
+      {
+        "station_name": "NASIK ROAD",
+        "station_code": "NK"
+      }
+    ],
+    "NELLORE": [
+      {
+        "station_name": "NELLORE",
+        "station_code": "NLR"
+      }
+    ],
+    "NIZAMABAD": [
+      {
+        "station_name": "NIZAMABAD",
+        "station_code": "NZB"
+      }
+    ],
+    "OKHA": [
+      {
+        "station_name": "OKHA",
+        "station_code": "OKHA"
+      }
+    ],
+    "ONGOLE": [
+      {
+        "station_name": "ONGOLE",
+        "station_code": "OGL"
+      }
+    ],
+    "ORAI": [
+      {
+        "station_name": "ORAI",
+        "station_code": "ORAI"
+      }
+    ],
+    "PALAKKAD": [
+      {
+        "station_name": "PALAKKAD",
+        "station_code": "PGT"
+      },
+      {
+        "station_name": "PALAKKAD TOWN",
+        "station_code": "PGTN"
+      }
+    ],
+    "PALAYANUR": [
+      {
+        "station_name": "PALAYANUR",
+        "station_code": "PNU"
+      }
+    ],
+    "PANIPAT": [
+      {
+        "station_name": "PANIPAT",
+        "station_code": "PNP"
+      }
+    ],
+    "PANVEL": [
+      {
+        "station_name": "PANVEL",
+        "station_code": "PNVL"
+      }
+    ],
+    "PARADEEP": [
+      {
+        "station_name": "PARADEEP",
+        "station_code": "PRDP"
+      }
+    ],
+    "PATHANKOT": [
+      {
+        "station_name": "PATHANKOT",
+        "station_code": "PTK"
+      }
+    ],
+    "PATIALA": [
+      {
+        "station_name": "PATIALA",
+        "station_code": "PTA"
+      }
+    ],
+    "PATNA": [
+      {
+        "station_name": "PATNA",
+        "station_code": "PNBE"
+      },
+      {
+        "station_name": "PATNA SAHIB",
+        "station_code": "PNC"
+      }
+    ],
+    "PILBHIT": [
+      {
+        "station_name": "PILBHIT",
+        "station_code": "PBE"
+      }
+    ],
+    "PORBANDAR": [
+      {
+        "station_name": "PORBANDAR",
+        "station_code": "PBR"
+      }
+    ],
+    "PUDUCHERRY": [
+      {
+        "station_name": "PUDUCHERRY",
+        "station_code": "PDY"
+      }
+    ],
+    "PUNE": [
+      {
+        "station_name": "PUNE JN.",
+        "station_code": "PUNE"
+      }
+    ],
+    "PURI": [
+      {
+        "station_name": "PURI",
+        "station_code": "PURI"
+      }
+    ],
+    "PURNEA": [
+      {
+        "station_name": "PURNEA",
+        "station_code": "PRNA"
+      }
+    ],
+    "PURULIA": [
+      {
+        "station_name": "PURULIA",
+        "station_code": "PRR"
+      }
+    ],
+    "RAE_BARELI": [
+      {
+        "station_name": "RAE BARELI",
+        "station_code": "RBL"
+      }
+    ],
+    "RAICHUR": [
+      {
+        "station_name": "RAICHUR",
+        "station_code": "RC"
+      }
+    ],
+    "RAIGARH": [
+      {
+        "station_name": "RAIGARH",
+        "station_code": "RIG"
+      }
+    ],
+    "RAIPUR": [
+      {
+        "station_name": "RAIPUR",
+        "station_code": "R"
+      }
+    ],
+    "RAJAHMUNDRY": [
+      {
+        "station_name": "RAJAHMUNDRY",
+        "station_code": "RJY"
+      }
+    ],
+    "RAJKOT": [
+      {
+        "station_name": "RAJKOT",
+        "station_code": "RJT"
+      }
+    ],
+    "RAMESWARAM": [
+      {
+        "station_name": "RAMESWARAM",
+        "station_code": "RMM"
+      }
+    ],
+    "RAMPUR": [
+      {
+        "station_name": "RAMPUR JN.",
+        "station_code": "RMU"
+      }
+    ],
+    "RANCHI": [
+      {
+        "station_name": "RANCHI",
+        "station_code": "RNC"
+      }
+    ],
+    "RATLAM": [
+      {
+        "station_name": "RATLAM",
+        "station_code": "RTM"
+      }
+    ],
+    "RATNAGIRI": [
+      {
+        "station_name": "RATNAGIRI",
+        "station_code": "RN"
+      }
+    ],
+    "RAXAUL": [
+      {
+        "station_name": "RAXAUL",
+        "station_code": "RXL"
+      }
+    ],
+    "RAYAGADA": [
+      {
+        "station_name": "RAYAGADA",
+        "station_code": "RGDA"
+      }
+    ],
+    "RENIGUNTA": [
+      {
+        "station_name": "RENIGUNTA",
+        "station_code": "RU"
+      }
+    ],
+    "REWA": [
+      {
+        "station_name": "REWA",
+        "station_code": "REWA"
+      }
+    ],
+    "REWARI": [
+      {
+        "station_name": "REWARI",
+        "station_code": "RE"
+      }
+    ],
+    "ROHTAK": [
+      {
+        "station_name": "ROHTAK",
+        "station_code": "ROK"
+      }
+    ],
+    "ROORKEE": [
+      {
+        "station_name": "ROORKEE",
+        "station_code": "RK"
+      }
+    ],
+    "ROURKELA": [
+      {
+        "station_name": "ROURKELA",
+        "station_code": "ROU"
+      }
+    ],
+    "SAHARANPUR": [
+      {
+        "station_name": "SAHARANPUR",
+        "station_code": "SRE"
+      }
+    ],
+    "SAHARSA": [
+      {
+        "station_name": "SAHARSA",
+        "station_code": "SHC"
+      }
+    ],
+    "SALEM": [
+      {
+        "station_name": "SALEM",
+        "station_code": "SA"
+      }
+    ],
+    "SAMASTIPUR": [
+      {
+        "station_name": "SAMASTIPUR",
+        "station_code": "SPJ"
+      }
+    ],
+    "SAMBALPUR": [
+      {
+        "station_name": "SAMBALPUR",
+        "station_code": "SBP"
+      },
+      {
+        "station_name": "SAMBALPUR CITY",
+        "station_code": "SBPY"
+      }
+    ],
+    "SANGLI": [
+      {
+        "station_name": "SANGLI",
+        "station_code": "SLI"
+      }
+    ],
+    "SATARA": [
+      {
+        "station_name": "SATARA",
+        "station_code": "STR"
+      }
+    ],
+    "SATNA": [
+      {
+        "station_name": "SATNA",
+        "station_code": "STA"
+      }
+    ],
+    "SAWAI_MADHOPUR": [
+      {
+        "station_name": "SAWAI MADHOPUR",
+        "station_code": "SWM"
+      }
+    ],
+    "SECUNDERABAD": [
+      {
+        "station_name": "SECUNDERABAD",
+        "station_code": "SC"
+      }
+    ],
+    "SHAHJAHANPUR": [
+      {
+        "station_name": "SHAHJAHANPUR",
+        "station_code": "SPN"
+      }
+    ],
+    "SHIMLA": [
+      {
+        "station_name": "SHIMLA",
+        "station_code": "SML"
+      }
+    ],
+    "SHIMOGA": [
+      {
+        "station_name": "SHIMOGA TOWN",
+        "station_code": "SMET"
+      }
+    ],
+    "SHIVPURI": [
+      {
+        "station_name": "SHIVPURI",
+        "station_code": "SVPI"
+      }
+    ],
+    "SIKAR": [
+      {
+        "station_name": "SIKAR",
+        "station_code": "SIKR"
+      }
+    ],
+    "SILCHAR": [
+      {
+        "station_name": "SILCHAR",
+        "station_code": "SCL"
+      }
+    ],
+    "SILIGURI": [
+      {
+        "station_name": "SILIGURI",
+        "station_code": "SGUJ"
+      },
+      {
+        "station_name": "SILIGURI TOWN",
+        "station_code": "SGUT"
+      }
+    ],
+    "SIRSA": [
+      {
+        "station_name": "SIRSA",
+        "station_code": "SSA"
+      }
+    ],
+    "SITAMARHI": [
+      {
+        "station_name": "SITAMARHI",
+        "station_code": "SMI"
+      }
+    ],
+    "SITAPUR": [
+      {
+        "station_name": "SITAPUR CITY",
+        "station_code": "SPC"
+      },
+      {
+        "station_name": "SITAPUR CANTT.",
+        "station_code": "SCC"
+      }
+    ],
+    "SIURI": [
+      {
+        "station_name": "SIURI",
+        "station_code": "SURI"
+      }
+    ],
+    "SIWAN": [
+      {
+        "station_name": "SIWAN",
+        "station_code": "SV"
+      }
+    ],
+    "SOLAN": [
+      {
+        "station_name": "SOLAN",
+        "station_code": "SOL"
+      }
+    ],
+    "SOLAPUR": [
+      {
+        "station_name": "SOLAPUR",
+        "station_code": "SUR"
+      }
+    ],
+    "SRIGANGANAGAR": [
+      {
+        "station_name": "SRIGANGANAGAR",
+        "station_code": "SGNR"
+      }
+    ],
+    "SULTANGANJ": [
+      {
+        "station_name": "SULTANGANJ",
+        "station_code": "SBG"
+      }
+    ],
+    "SULTANPUR": [
+      {
+        "station_name": "SULTANPUR",
+        "station_code": "SLN"
+      }
+    ],
+    "SURAT": [
+      {
+        "station_name": "SURAT",
+        "station_code": "ST"
+      }
+    ],
+    "SURATGARH": [
+      {
+        "station_name": "SURATGARH",
+        "station_code": "SOG"
+      }
+    ],
+    "TAMBARAM": [
+      {
+        "station_name": "TAMBARAM",
+        "station_code": "TBM"
+      }
+    ],
+    "TATANAGAR": [
+      {
+        "station_name": "TATANAGAR",
+        "station_code": "TATA"
+      }
+    ],
+    "TENALI": [
+      {
+        "station_name": "TENALI",
+        "station_code": "TEL"
+      }
+    ],
+    "TENKASI": [
+      {
+        "station_name": "TENKASI",
+        "station_code": "TS"
+      }
+    ],
+    "THANJAVUR": [
+      {
+        "station_name": "THANJAVUR",
+        "station_code": "TJ"
+      }
+    ],
+    "THRISSUR": [
+      {
+        "station_name": "THRISSUR",
+        "station_code": "TCR"
+      }
+    ],
+    "THIRUVANANTHAPURAM": [
+      {
+        "station_name": "THIRUVANANTHAPURAM",
+        "station_code": "TVC"
+      }
+    ],
+    "TIRUCHCHIRAPPALLI": [
+      {
+        "station_name": "TIRUCHCHIRAPPALLI JN.",
+        "station_code": "TPJ"
+      }
+    ],
+    "TIRUNELVELI": [
+      {
+        "station_name": "TIRUNELVELI",
+        "station_code": "TEN"
+      }
+    ],
+    "TIRUPATI": [
+      {
+        "station_name": "TIRUPATI",
+        "station_code": "TPTY"
+      }
+    ],
+    "TIRUPPUR": [
+      {
+        "station_name": "TIRUPPUR",
+        "station_code": "TUP"
+      }
+    ],
+    "TITLAGARH": [
+      {
+        "station_name": "TITLAGARH",
+        "station_code": "TIG"
+      }
+    ],
+    "TUNDLA": [
+      {
+        "station_name": "TUNDLA",
+        "station_code": "TDL"
+      }
+    ],
+    "TUTICORIN": [
+      {
+        "station_name": "TUTICORIN",
+        "station_code": "TN"
+      }
+    ],
+    "UDAIPUR": [
+      {
+        "station_name": "UDAIPUR CITY",
+        "station_code": "UDZ"
+      }
+    ],
+    "UDHAMPUR": [
+      {
+        "station_name": "UDHAMPUR",
+        "station_code": "UHP"
+      }
+    ],
+    "UDUPI": [
+      {
+        "station_name": "UDUPI",
+        "station_code": "UD"
+      }
+    ],
+    "UJJAIN": [
+      {
+        "station_name": "UJJAIN",
+        "station_code": "UJN"
+      }
+    ],
+    "UNA": [
+      {
+        "station_name": "UNA",
+        "station_code": "UNA"
+      }
+    ],
+    "UNNAO": [
+      {
+        "station_name": "UNNAO",
+        "station_code": "ON"
+      }
+    ],
+    "VADODARA": [
+      {
+        "station_name": "VADODARA",
+        "station_code": "BRC"
+      }
+    ],
+    "VALSAD": [
+      {
+        "station_name": "VALSAD",
+        "station_code": "BL"
+      }
+    ],
+    "VARANASI": [
+      {
+        "station_name": "VARANASI",
+        "station_code": "BSB"
+      }
+    ],
+    "VASCO-DA-GAMA": [
+      {
+        "station_name": "VASCO-DA-GAMA",
+        "station_code": "VSG"
+      }
+    ],
+    "VERAVAL": [
+      {
+        "station_name": "VERAVAL",
+        "station_code": "VRL"
+      }
+    ],
+    "VIDISHA": [
+      {
+        "station_name": "VIDISHA",
+        "station_code": "BHS"
+      }
+    ],
+    "VIJAYAWADA": [
+      {
+        "station_name": "VIJAYAWADA",
+        "station_code": "BZA"
+      }
+    ],
+    "VILLUPURAM": [
+      {
+        "station_name": "VILLUPURAM JN.",
+        "station_code": "VM"
+      }
+    ],
+    "VIRAMGAM": [
+      {
+        "station_name": "VIRAMGAM",
+        "station_code": "VG"
+      }
+    ],
+    "VIRUDUNAGAR": [
+      {
+        "station_name": "VIRUDUNAGAR JN.",
+        "station_code": "VPT"
+      }
+    ],
+    "VISAKHAPATNAM": [
+      {
+        "station_name": "VISAKHAPATNAM",
+        "station_code": "VSKP"
+      }
+    ],
+    "VIZIANAGARAM": [
+      {
+        "station_name": "VIZIANAGARAM",
+        "station_code": "VZM"
+      }
+    ],
+    "WADI": [
+      {
+        "station_name": "WADI",
+        "station_code": "WADI"
+      }
+    ],
+    "WANKANER": [
+      {
+        "station_name": "WANKANER",
+        "station_code": "WKR"
+      }
+    ],
+    "WARANGAL": [
+      {
+        "station_name": "WARANGAL",
+        "station_code": "WL"
+      }
+    ],
+    "WARDHA": [
+      {
+        "station_name": "WARDHA JN.",
+        "station_code": "WR"
+      }
+    ],
+    "YESVANTPUR": [
+      {
+        "station_name": "YESVANTPUR",
+        "station_code": "YPR"
+      }
+    ],
+    "ZAFARABAD": [
+      {
+        "station_name": "ZAFARABAD",
+        "station_code": "ZBD"
+      }
+    ]
+  }
+}
