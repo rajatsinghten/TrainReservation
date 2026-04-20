@@ -1,9 +1,45 @@
 import React, { useState } from "react";
+import ReactDOM from "react-dom";
 import axiosInstance from "../../utils/axios";
 import { Spinner } from "../ui";
 import BookingModal from "./BookingModal";
 import AuthModal from "./AuthModal";
 import { isAuthenticated } from "../../utils/axios";
+
+// Inline duplicate ticket confirmation modal
+const DuplicateWarningModal = ({ onConfirm, onCancel }) =>
+  ReactDOM.createPortal(
+    <div className="fixed inset-0 z-[1000] flex items-center justify-center p-6 bg-black/80 animate-minimal-in">
+      <div className="bg-white border-4 border-black max-w-sm w-full p-8 space-y-8">
+        <div className="text-center space-y-4">
+          <div className="w-12 h-12 border-2 border-black flex items-center justify-center mx-auto">
+            <span className="text-2xl font-black">!</span>
+          </div>
+          <div className="space-y-2">
+            <h2 className="text-xl font-black uppercase tracking-tighter">Already Booked</h2>
+            <p className="text-[10px] font-black uppercase tracking-widest opacity-30 leading-relaxed">
+              You already have a ticket for this train on the same day in the same class. Do you want to book a second one?
+            </p>
+          </div>
+        </div>
+        <div className="space-y-3">
+          <button
+            onClick={onConfirm}
+            className="w-full py-4 bg-black text-white text-[10px] font-black uppercase tracking-widest hover:bg-white hover:text-black border-2 border-black transition-colors"
+          >
+            Yes, Book Again
+          </button>
+          <button
+            onClick={onCancel}
+            className="w-full py-4 bg-white text-black text-[10px] font-black uppercase tracking-widest hover:bg-black hover:text-white border-2 border-black transition-colors"
+          >
+            Cancel
+          </button>
+        </div>
+      </div>
+    </div>,
+    document.body
+  );
 
 const TrainCard = ({ train }) => {
   const [selectedClass, setSelectedClass] = useState("");
@@ -12,6 +48,7 @@ const TrainCard = ({ train }) => {
   const [bookingError, setBookingError] = useState(null);
   const [showModal, setShowModal] = useState(false);
   const [showAuthModal, setShowAuthModal] = useState(false);
+  const [showDuplicateModal, setShowDuplicateModal] = useState(false);
   const [bookingData, setBookingData] = useState(null);
 
   const handleClassSelect = (classInfo) => {
@@ -19,14 +56,7 @@ const TrainCard = ({ train }) => {
     setSelectedFare(classInfo.fare);
   };
 
-  const handleBookTicket = async () => {
-    if (!selectedClass) return;
-    
-    if (!isAuthenticated()) {
-      setShowAuthModal(true);
-      return;
-    }
-
+  const performBooking = async () => {
     setIsBooking(true);
     setBookingError(null);
 
@@ -50,6 +80,37 @@ const TrainCard = ({ train }) => {
     } finally {
       setIsBooking(false);
     }
+  };
+
+  const handleBookTicket = async () => {
+    if (!selectedClass) return;
+
+    if (!isAuthenticated()) {
+      setShowAuthModal(true);
+      return;
+    }
+
+    // Check for duplicate booking on same train/date/class
+    try {
+      const { data } = await axiosInstance.get("/api/bookings/my");
+      const existing = data.bookings?.find(
+        (b) =>
+          b.trainNumber === train.trainNumber &&
+          b.class === selectedClass &&
+          new Date(b.travelDate).toDateString() ===
+            new Date(train.train_date).toDateString() &&
+          b.status !== "CANCELLED"
+      );
+
+      if (existing) {
+        setShowDuplicateModal(true);
+        return;
+      }
+    } catch {
+      // If check fails, proceed with booking anyway
+    }
+
+    await performBooking();
   };
 
   return (
@@ -96,17 +157,27 @@ const TrainCard = ({ train }) => {
       </div>
 
       {showModal && (
-        <BookingModal 
-          isOpen={showModal} 
-          onClose={() => setShowModal(false)} 
-          booking={bookingData} 
+        <BookingModal
+          isOpen={showModal}
+          onClose={() => setShowModal(false)}
+          booking={bookingData}
         />
       )}
 
       {showAuthModal && (
-        <AuthModal 
-          isOpen={showAuthModal} 
-          onClose={() => setShowAuthModal(false)} 
+        <AuthModal
+          isOpen={showAuthModal}
+          onClose={() => setShowAuthModal(false)}
+        />
+      )}
+
+      {showDuplicateModal && (
+        <DuplicateWarningModal
+          onConfirm={async () => {
+            setShowDuplicateModal(false);
+            await performBooking();
+          }}
+          onCancel={() => setShowDuplicateModal(false)}
         />
       )}
     </div>

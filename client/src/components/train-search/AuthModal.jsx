@@ -1,4 +1,5 @@
 import React from "react";
+import ReactDOM from "react-dom";
 import { useNavigate } from "react-router-dom";
 
 const AuthModal = ({ isOpen, onClose }) => {
@@ -6,7 +7,7 @@ const AuthModal = ({ isOpen, onClose }) => {
 
   if (!isOpen) return null;
 
-  return (
+  return ReactDOM.createPortal(
     <div className="fixed inset-0 z-[1000] flex items-center justify-center p-6 bg-black/80 animate-minimal-in">
       <div className="bg-white border-4 border-black max-w-sm w-full p-8 space-y-8">
         <div className="text-center space-y-4">
@@ -22,28 +23,29 @@ const AuthModal = ({ isOpen, onClose }) => {
         </div>
 
         <div className="space-y-3">
-          <button 
+          <button
             onClick={() => { onClose(); navigate('/login'); }}
             className="w-full py-4 bg-black text-white text-[10px] font-black uppercase tracking-widest hover:bg-white hover:text-black border-2 border-black transition-colors"
           >
             Sign In
           </button>
-          <button 
-            onClick={() => { onClose(); navigate('/login'); }}
+          <button
+            onClick={() => { onClose(); navigate('/register'); }}
             className="w-full py-4 bg-white text-black text-[10px] font-black uppercase tracking-widest hover:bg-black hover:text-white border-2 border-black transition-colors"
           >
             Create Account
           </button>
-          
-          <button 
-            onClick={onClose} 
+
+          <button
+            onClick={onClose}
             className="w-full py-2 text-[8px] font-black uppercase tracking-widest opacity-20 hover:opacity-100 transition-opacity"
           >
             Dismiss
           </button>
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 };
 
