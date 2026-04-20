@@ -2,11 +2,11 @@ import axios from 'axios';
 
 const defaultApiBaseURL = import.meta.env.MODE === 'development'
   ? 'http://localhost:4000'
-  : 'https://trainbuddy.onrender.com';
+  : 'https://train-reservation.onrender.com';
 
 const defaultSocketURL = import.meta.env.MODE === 'development'
   ? 'http://localhost:4000'
-  : 'https://trainbuddy.onrender.com';
+  : 'https://train-reservation.onrender.com';
 
 export const getApiBaseURL = () => import.meta.env.VITE_API_BASE_URL || defaultApiBaseURL;
 

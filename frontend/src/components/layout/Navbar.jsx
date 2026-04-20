@@ -70,7 +70,7 @@ const Navbar = () => {
               </svg>
             </div>
             <span className="text-xl font-bold text-surface-900 tracking-tight font-display">
-              Train<span className="text-primary-600">Buddy</span>
+              Train<span className="text-primary-600">Reservation</span>
             </span>
           </Link>
 

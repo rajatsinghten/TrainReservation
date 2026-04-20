@@ -91,8 +91,8 @@ const Login = () => {
               <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
             </svg>
           </div>
-          <span className="text-2xl font-bold text-white tracking-tight">
-            Train<span className="text-primary-400">Buddy</span>
+          <span className="text-2xl font-bold text-white tracking-tight font-display">
+            Train<span className="text-primary-400">Reservation</span>
           </span>
         </Link>
 
@@ -103,7 +103,7 @@ const Login = () => {
               {isLogin ? 'Welcome back' : 'Create account'}
             </h2>
             <p className="text-sm text-surface-400 mt-1">
-              {isLogin ? 'Sign in to find your travel buddies' : 'Join the TrainBuddy community'}
+              {isLogin ? 'Sign in to access your bookings' : 'Join our reservation platform'}
             </p>
           </div>
           

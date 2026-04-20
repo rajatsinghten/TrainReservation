@@ -1,7 +1,7 @@
 {
-  "name": "buddy-on-train-backend",
+  "name": "train-reservation-system",
   "version": "1.0.0",
-  "description": "Backend for BuddyOnTrain application",
+  "description": "Professional Train Reservation System with real-time payment simulation",
   "main": "server.js",
   "scripts": {
     "start": "node backend/index.js",
@@ -11,12 +11,11 @@
   },
   "keywords": [
     "train",
-    "social",
     "travel",
-    "buddy",
     "nodejs",
     "express",
-    "mongodb"
+    "postgresql",
+    "prisma"
   ],
   "author": "",
   "license": "ISC",

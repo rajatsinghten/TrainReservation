@@ -93,7 +93,7 @@ const ProfileSetup = () => {
             </svg>
           </div>
           <span className="text-xl font-bold text-white font-display">
-            Train<span className="text-primary-400">Buddy</span>
+            Train<span className="text-primary-400">Reservation</span>
           </span>
         </Link>
 
