@@ -3,27 +3,27 @@ import { useNavigate } from 'react-router-dom';
 import { Navbar } from '../components/layout';
 import { TrainSearchContainer } from '../components/train-search';
 import SearchForm from '../components/train-search/SearchForm';
-import { BuddySystemContainer } from '../components/buddy-system';
-import { ContentDivider } from '../components/common';
 import { useTrainContext } from '../context/Context';
 
 const Results = () => {
   const navigate = useNavigate();
-  const { showTrainResults, suggestions, trains } = useTrainContext();
+  const { showTrainResults, trains } = useTrainContext();
 
   const hasTrainResults = showTrainResults && trains && trains.length > 0;
-  const hasBuddyResults = !!suggestions;
-  const hasAnyResults = hasTrainResults || hasBuddyResults;
-  const bothVisible = hasTrainResults && hasBuddyResults;
-  const onlyBuddies = hasBuddyResults && !hasTrainResults;
 
-  if (!hasAnyResults) {
+  if (!showTrainResults) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-surface-50 via-primary-50/30 to-surface-50 relative overflow-hidden">
         <Navbar />
         <div className="flex flex-col items-center justify-center min-h-screen gap-3">
-          <p className="text-sm text-surface-500">No results to display.</p>
-          <button onClick={() => navigate('/')} className="btn-primary btn-sm">Go Home</button>
+          <div className="w-16 h-16 bg-surface-100 rounded-full flex items-center justify-center mb-2">
+            <svg className="w-8 h-8 text-surface-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+          <h2 className="text-xl font-bold text-surface-900">No results to display</h2>
+          <p className="text-sm text-surface-500">Try searching for a different route or date.</p>
+          <button onClick={() => navigate('/')} className="btn-primary btn-sm mt-2">Go Home</button>
         </div>
       </div>
     );
@@ -39,33 +39,10 @@ const Results = () => {
       <Navbar />
       <SearchForm />
 
-      <div className={`flex flex-col items-center relative w-full ${
-        bothVisible ? 'lg:max-w-none' : 'max-w-6xl'
-      } mx-auto px-4 sm:px-6 gap-4 pt-32 lg:pt-36`}>
-        {onlyBuddies ? (
-          <>
-            <div className="w-full">
-              <TrainSearchContainer />
-            </div>
-            <div className="w-full animate-fade-in">
-              <BuddySystemContainer />
-            </div>
-          </>
-        ) : (
-          <div className={`flex flex-col lg:flex-row items-center m-auto lg:items-start w-full ${
-            bothVisible ? 'lg:gap-6' : 'lg:gap-0'
-          } ${
-            bothVisible ? 'lg:justify-center' : 'lg:justify-around'
-          }`}>
-            <div className={`w-full ${bothVisible ? 'lg:w-1/2 lg:flex-1' : ''}`}>
-              <TrainSearchContainer />
-            </div>
-            {bothVisible && <ContentDivider />}
-            <div className={`w-full ${bothVisible ? 'lg:w-1/2 lg:flex-1' : 'lg:w-auto'} animate-fade-in`}>
-              <BuddySystemContainer />
-            </div>
-          </div>
-        )}
+      <div className="flex flex-col items-center relative w-full max-w-4xl mx-auto px-4 sm:px-6 gap-4 pt-32 lg:pt-36 pb-12">
+        <div className="w-full">
+          <TrainSearchContainer />
+        </div>
       </div>
     </div>
   );

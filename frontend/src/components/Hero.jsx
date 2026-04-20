@@ -22,10 +22,6 @@ const InfoPanel = () => (
       {[85, 140, 195, 250, 305].map((x, i) => (
         <rect key={i} x={x} y="134" width="36" height="26" rx="6" fill="url(#windowGrad)" />
       ))}
-      <ellipse cx="103" cy="144" rx="8" ry="8" fill="#bfdbfe" opacity="0.8"/>
-      <ellipse cx="158" cy="146" rx="7" ry="7" fill="#a5f3fc" opacity="0.7"/>
-      <ellipse cx="213" cy="144" rx="8" ry="8" fill="#bbf7d0" opacity="0.8"/>
-      <ellipse cx="268" cy="145" rx="7" ry="7" fill="#fde68a" opacity="0.7"/>
       <rect x="340" y="106" width="80" height="84" rx="12" fill="url(#cabGrad)" />
       <rect x="350" y="116" width="30" height="22" rx="6" fill="url(#windowGrad)" />
       <rect x="386" y="116" width="24" height="22" rx="6" fill="url(#windowGrad)" />
@@ -38,14 +34,6 @@ const InfoPanel = () => (
           <circle cx={cx} cy="192" r="3.5" fill="#94a3b8" />
         </g>
       ))}
-      <circle cx="430" cy="82" r="11" fill="white" opacity="0.6"/>
-      <circle cx="447" cy="67" r="8" fill="white" opacity="0.4"/>
-      <circle cx="459" cy="56" r="5" fill="white" opacity="0.25"/>
-      <rect x="424" y="93" width="12" height="15" rx="3" fill="#334155"/>
-      <ellipse cx="30" cy="180" rx="8" ry="18" fill="#6366f1" opacity="0.7"/>
-      <circle cx="30" cy="156" r="7" fill="#818cf8" opacity="0.8"/>
-      <ellipse cx="50" cy="182" rx="7" ry="16" fill="#10b981" opacity="0.6"/>
-      <circle cx="50" cy="159" r="6" fill="#34d399" opacity="0.7"/>
       <defs>
         <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0%" stopColor="#eef2ff"/>
@@ -66,14 +54,14 @@ const InfoPanel = () => (
       </defs>
     </svg>
 
-    <h2 className="text-xl font-bold text-surface-900 mb-1">How it works</h2>
-    <p className="text-surface-400 text-xs mb-6 max-w-xs">Three simple steps to find your perfect travel companion</p>
+    <h2 className="text-xl font-bold text-surface-900 mb-1">Easy Booking</h2>
+    <p className="text-surface-400 text-xs mb-6 max-w-xs">Three simple steps to secure your train reservation</p>
 
     <div className="flex flex-col gap-4 text-left w-full max-w-xs">
       {[
-        { step: '01', icon: 'M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z', title: 'Search your train', desc: 'Enter origin, destination and travel date to find available trains.' },
-        { step: '02', icon: 'M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z', title: 'Discover buddies', desc: 'Find fellow travelers on the same route and class.' },
-        { step: '03', icon: 'M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z', title: 'Connect & chat', desc: 'Send a request and connect before your journey begins.' },
+        { step: '01', icon: 'M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z', title: 'Search Trains', desc: 'Enter origin, destination and travel date to find available trains.' },
+        { step: '02', icon: 'M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z', title: 'Select & Book', desc: 'Pick your preferred class and initiate the booking process.' },
+        { step: '03', icon: 'M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z', title: 'Scan & Pay', desc: 'Complete your payment instantly by scanning the generated QR code.' },
       ].map(item => (
         <div key={item.step} className="flex items-start gap-3">
           <div className="w-8 h-8 rounded-xl bg-primary-600 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -91,9 +79,9 @@ const InfoPanel = () => (
 
     <div className="mt-8 flex items-center gap-5">
       {[
-        { value: '10K+', label: 'Buddies matched' },
-        { value: '500+', label: 'Routes' },
-        { value: '4.8★', label: 'Rating' },
+        { value: '50K+', label: 'Tickets Booked' },
+        { value: '1000+', label: 'Routes' },
+        { value: '4.9★', label: 'Rating' },
       ].map(stat => (
         <div key={stat.label} className="text-center">
           <p className="text-base font-bold text-primary-600">{stat.value}</p>
@@ -110,7 +98,7 @@ const Hero = () => {
       {/* Left: vertically stacked search form */}
       <div className="w-full lg:w-1/2 flex flex-col justify-center px-6 sm:px-10 lg:px-12 py-8 overflow-y-auto border-r border-surface-200/50">
         <div className="max-w-sm mx-auto w-full">
-          <h1 className="mb-5 font-bold">Find Your Travel Buddy</h1>
+          <h1 className="mb-5 font-bold font-display text-surface-900 leading-tight">Book Your Next <br/><span className="text-primary-600">Train Journey</span></h1>
           <SearchForm inline />
         </div>
       </div>
