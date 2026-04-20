@@ -92,22 +92,37 @@ const TrainCard = ({ train }) => {
 
     // Check for duplicate booking on same train/date/class
     try {
-      const { data } = await axiosInstance.get("/api/bookings/my");
+      const { data } = await axiosInstance.get("/api/bookings/my-bookings");
+      
+      const parseTrainDate = (dateStr) => {
+        if (!dateStr) return null;
+        // Handle YYYYMMDD format from API
+        if (dateStr.length === 8 && /^\d{8}$/.test(dateStr)) {
+          return `${dateStr.substring(0, 4)}-${dateStr.substring(4, 6)}-${dateStr.substring(6, 8)}`;
+        }
+        return dateStr;
+      };
+
+      const targetDate = parseTrainDate(train.train_date);
+      
       const existing = data.bookings?.find(
-        (b) =>
-          b.trainNumber === train.trainNumber &&
-          b.class === selectedClass &&
-          new Date(b.travelDate).toDateString() ===
-            new Date(train.train_date).toDateString() &&
-          b.status !== "CANCELLED"
+        (b) => {
+          const bookingDate = new Date(b.travelDate).toISOString().split('T')[0];
+          return (
+            b.trainNumber === train.trainNumber &&
+            b.class === selectedClass &&
+            bookingDate === targetDate &&
+            b.status !== "CANCELLED"
+          );
+        }
       );
 
       if (existing) {
         setShowDuplicateModal(true);
         return;
       }
-    } catch {
-      // If check fails, proceed with booking anyway
+    } catch (err) {
+      console.error("Duplicate check failed:", err);
     }
 
     await performBooking();
