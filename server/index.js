@@ -21,8 +21,6 @@ try {
 
 const PORT = process.env.PORT || 4000;
 const isProduction = process.env.NODE_ENV === 'production';
-const projectRoot = path.resolve(__dirname, '..');
-const frontendDistPath = path.join(projectRoot, 'client', 'dist');
 
 const app = express()
 
@@ -40,16 +38,13 @@ app.use('/api/stations', stationRoute)
 app.use('/api/users', userRoute)
 app.use('/api/bookings', bookingRoute)
 
-if (isProduction) {
-  app.use(express.static(frontendDistPath));
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(frontendDistPath, 'index.html'));
+app.get('/', (req, res) => {
+  res.json({
+    status: "success",
+    message: "Train Reservation API is live",
+    environment: process.env.NODE_ENV || "development"
   });
-} else {
-  app.get('/', (req, res) => {
-    res.send('Train Reservation System API is running');
-  });
-}
+});
 
 const server = http.createServer(app);
 
